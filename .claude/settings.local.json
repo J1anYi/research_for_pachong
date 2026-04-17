@@ -1,0 +1,23 @@
+{
+  "skills": {
+    "tavily-search": {
+      "type": "local",
+      "command": "python",
+      "args": ["${skillPath}/run.py"],
+      "env": {
+        "TAVILY_API_KEY": "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",
+        "PYTHONPATH": "${skillPath}:${env:PYTHONPATH}"
+      },
+      "workingDir": "${skillPath}",
+      "description": "使用Tavily进行网络搜索",
+      "help": "用法: /tavily-search [查询内容]\n示例: /tavily-search '人工智能的最新发展'\n选项: 可以在查询中添加'深度搜索', '结果数量:N', '包含域名:...', '排除域名:...'等",
+      "tags": ["search", "web", "research", "tavily"]
+    }
+  },
+  "mcpServers": {
+    "tavily": {
+      "type": "http",
+      "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=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"
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 **Project:** MediaCrawler 前端体验优化
 **Current Phase:** Phase 3 - 数据排序与滚动刷新优化
-**Status:** Ready to plan
+**Status:** Complete
 **Last Updated:** 2026-04-22
 
 ---
@@ -12,7 +12,7 @@
 See: .planning/PROJECT.md (updated 2026-04-22)
 
 **Core value:** 用户能清晰看到实时更新的数据，操作流畅
-**Current focus:** Phase 2 完成，准备进入 Phase 3
+**Current focus:** Phase 3 完成
 
 ---
 
@@ -27,18 +27,18 @@ See: .planning/PROJECT.md (updated 2026-04-22)
 - [x] Plan 03: 后端发送新增数据和标题信息
 - [x] Plan 04: 验证并调整通知显示时间
 
-### Current Phase
+**Phase 3: 数据排序与滚动刷新优化** ✅ Complete (2026-04-22)
 
-**Phase 3: 数据排序与滚动刷新优化**
-
-- [ ] 验证并修复卡片排序问题（最新数据前置）
-- [ ] 修复滚动游标刷新无反应问题
-- [ ] 添加排序方式切换UI（按时间/按热度）
+- [x] Plan 01: 验证并修复卡片排序问题
+- [x] Plan 02: 实现无限滚动加载
+- [x] Plan 03: 添加排序方式切换UI
 
 ### Next Actions
 
-1. 运行 `/gsd-discuss-phase 3` 讨论设计决策
-2. 或运行 `/gsd-plan-phase 3` 直接规划
+Phase 3 已完成。所有计划的功能已实现：
+- ✅ 后端排序逻辑验证通过
+- ✅ 无限滚动加载实现完成
+- ✅ 排序选择器 UI 实现完成
 
 ---
 
@@ -47,6 +47,7 @@ See: .planning/PROJECT.md (updated 2026-04-22)
 ### Roadmap Evolution
 
 - Phase 3 added: 数据排序与滚动刷新优化
+- Phase 3 completed: 2026-04-22
 
 ### Key Decisions
 
@@ -57,6 +58,8 @@ See: .planning/PROJECT.md (updated 2026-04-22)
 | titles 显示最多 2 条 | 通知详情显示前 2 条标题，超出显示 "等N条"，保持简洁 | Phase 2 Plan 02 |
 | 后端计算增量而非前端 | 后端追踪记录总数变化，计算 new_count = current - previous，避免前端状态管理 | Phase 2 Plan 03 |
 | 异步读取最新记录标题 | 使用 aiofiles 异步读取 JSONL/JSON 文件，获取最新记录标题用于通知展示 | Phase 2 Plan 03 |
+| IntersectionObserver 实现无限滚动 | 使用 rootMargin: '100px' 提前触发加载，平滑用户体验 | Phase 3 Plan 02 |
+| localStorage 持久化排序偏好 | 用户选择的排序方式保存到 localStorage，下次访问保持选择 | Phase 3 Plan 03 |
 
 ---
 
@@ -83,8 +86,9 @@ WebSocket 端点配置不匹配问题已修复：
 | 新增数量推送 | ✅ 完成 | 后端计算 new_count 并推送 |
 | 标题信息推送 | ✅ 完成 | 后端获取最新记录标题推送 |
 | 通知显示时间 | ✅ 验证 | 5秒满足3-5秒需求范围 |
-| 数据排序 | 🔧 优化 | 最新数据应前置 |
-| 滚动刷新 | ❌ Bug | 游标刷新无反应 |
+| 数据排序 | ✅ 完成 | 后端时间降序排列 |
+| 滚动刷新 | ✅ 完成 | 无限滚动加载实现 |
+| 排序 UI | ✅ 完成 | 排序选择器 + localStorage |
 
 ---
 

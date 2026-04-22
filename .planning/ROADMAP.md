@@ -1,72 +1,103 @@
-# Roadmap: MediaCrawler 实时数据推送修复
+# Roadmap: MediaCrawler 前端体验优化
 
 **Created:** 2026-04-22
-**Project:** MediaCrawler 实时数据推送修复
-**Phases:** 1
-**Requirements:** 12
+**Project:** MediaCrawler 前端体验优化
+**Phases:** 3
+**Requirements:** 9
 
 ---
 
-## Phase 1: 验证并完善实时数据推送
+## Phase 1: 修复刷新按钮
 
-**Goal:** 验证 WebSocket 推送功能完整可用，确保所有平台都能正常推送数据到前端
+**Goal:** 修复右上角"刷新"按钮点击无反应的问题
 
 **Status:** pending
 
 ### Requirements
 
-- REAL-01: 前端 WebSocket 能正确连接到后端
-- REAL-02: 文件变化时后端能检测到并触发推送
-- REAL-03: 数据更新消息能正确推送到前端
-- REAL-04: 前端能接收并处理 data_update 消息
-- REAL-05: 前端能接收并处理 stats_update 消息
-- PLAT-01: 小红书(xhs)数据更新能推送到前端
-- PLAT-02: 抖音(dy)数据更新能推送到前端
-- PLAT-03: B站(bili)数据更新能推送到前端
-- PLAT-04: 知乎(zhihu)数据更新能推送到前端
-- UI-01: 数据更新时显示通知弹窗
-- UI-02: 数据更新时刷新对应平台的数据列表
-- UI-03: WebSocket 连接状态指示器正常工作
+- BUG-01: 修复右上角"刷新"按钮点击无反应问题
 
 ### Success Criteria
 
-1. 启动服务后，前端 WebSocket 连接状态显示"已连接"
-2. 当爬虫写入数据到文件时，前端在 1 秒内收到更新通知
-3. 所有4个平台（小红书、抖音、B站、知乎）的数据更新都能正确推送到前端
-4. 数据更新时前端显示通知弹窗，内容正确
-5. 数据列表自动刷新显示新数据
+1. 点击刷新按钮后数据列表重新加载
+2. 刷新按钮有加载状态反馈
+3. 刷新过程中不阻塞UI
 
 ### Technical Approach
 
-1. **验证 WebSocket 连接**
-   - 启动后端服务
-   - 打开前端页面
-   - 检查浏览器控制台 WebSocket 连接日志
-   - 确认连接状态指示器显示"已连接"
+1. 检查 `viewer/static/js/app.js` 中刷新按钮的事件绑定
+2. 确保 `loadNotes()` 函数被正确调用
+3. 添加加载状态指示器
 
-2. **验证文件监控**
-   - 手动修改 JSONL 文件
-   - 检查后端日志是否显示 `[FileWatcher]` 和 `[WS]` 日志
-   - 确认消息被广播
+---
 
-3. **验证前端接收**
-   - 检查浏览器控制台是否显示 `[WS] Data update for platform: xhs` 等日志
-   - 确认通知弹窗显示
-   - 确认数据列表刷新
+## Phase 2: 修复提醒框问题
 
-4. **多平台测试**
-   - 分别测试小红书、抖音、B站、知乎
-   - 确认每个平台都能正常推送
+**Goal:** 修复提醒框重复弹出和内容显示问题
 
-### Key Files
+**Status:** pending
 
-- `api/routers/websocket.py` - WebSocket 端点
-- `api/services/file_watcher.py` - 文件监控服务
-- `viewer/static/js/websocket-client.js` - 前端 WebSocket 客户端
-- `viewer/static/js/app.js` - 小红书前端逻辑
-- `viewer/static/js/douyin-app.js` - 抖音前端逻辑
-- `viewer/static/js/bilibili-app.js` - B站前端逻辑
-- `viewer/static/js/zhihu-app.js` - 知乎前端逻辑
+### Requirements
+
+- BUG-02: 修复提醒框一直弹出的问题
+- BUG-03: 修复数据统计一直显示"新增 340 条数据"的问题
+- NOTIF-01: 提醒框显示更新的内容标题
+- NOTIF-02: 提醒框维持时间延长
+- NOTIF-03: 提醒框去重
+
+### Success Criteria
+
+1. 提醒框只在有新数据时弹出一次
+2. 提醒框显示具体更新的内容（如笔记标题）
+3. 提醒框维持 3-5 秒后自动消失
+4. 相同内容不重复弹出
+
+### Technical Approach
+
+1. **修复重复弹出**
+   - 检查 `broadcast_stats_update()` 是否被重复调用
+   - 添加消息去重机制（基于时间戳或内容hash）
+
+2. **优化提醒内容**
+   - 读取最新的数据记录
+   - 提取标题或关键字段显示
+
+3. **延长显示时间**
+   - 修改 `notifications.js` 中的 `autoClose` 时间
+
+---
+
+## Phase 3: 优化数据展示
+
+**Goal:** 最新数据前置显示，支持按时间排序
+
+**Status:** pending
+
+### Requirements
+
+- DATA-01: 最新爬取的数据前置显示
+- DATA-02: 添加卡片排序功能
+- DATA-03: 数据更新时平滑滚动到新数据位置
+
+### Success Criteria
+
+1. 新数据出现在列表顶部
+2. 用户可以选择排序方式（时间升序/降序）
+3. 有新数据时自动滚动到顶部或显示提示
+
+### Technical Approach
+
+1. **数据排序**
+   - 修改 API 返回数据时按时间降序排列
+   - 或在前端渲染前排序
+
+2. **排序UI**
+   - 添加排序下拉菜单
+   - 保存用户排序偏好
+
+3. **滚动动画**
+   - 使用 `scrollIntoView({ behavior: 'smooth' })`
+   - 或显示"有新数据"提示按钮
 
 ---
 
@@ -74,7 +105,9 @@
 
 | Phase | Goal | Requirements | Status |
 |-------|------|--------------|--------|
-| 1 | 验证并完善实时数据推送 | 12 | pending |
+| 1 | 修复刷新按钮 | 1 | pending |
+| 2 | 修复提醒框问题 | 5 | pending |
+| 3 | 优化数据展示 | 3 | pending |
 
 ---
 *Last updated: 2026-04-22*

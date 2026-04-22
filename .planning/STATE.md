@@ -1,8 +1,8 @@
 # Project State
 
 **Project:** MediaCrawler 前端体验优化
-**Current Phase:** Phase 1 - 修复刷新按钮
-**Status:** pending
+**Current Phase:** Phase 1 - 数据刷新与排序优化
+**Status:** in_progress
 **Last Updated:** 2026-04-22
 
 ---
@@ -24,17 +24,26 @@ See: .planning/PROJECT.md (updated 2026-04-22)
 
 ### Current Phase
 
-**Phase 1: 修复刷新按钮**
+**Phase 1: 数据刷新与排序优化**
 
-- [ ] 检查刷新按钮事件绑定
-- [ ] 修复点击无反应问题
-- [ ] 添加加载状态反馈
+- [x] 添加内联 onclick 作为刷新按钮临时修复
+- [x] 刷新后自动滚动到顶部
+- [ ] 清理内联 onclick，改用正规事件绑定
+- [ ] 验证数据排序是否正确
 
 ### Next Actions
 
-1. 检查 `app.js` 中刷新按钮的事件监听器
-2. 确保 `loadNotes()` 函数正确绑定
-3. 测试修复效果
+1. 继续完成 Phase 1 剩余任务
+2. 进入 Phase 2 修复提醒框问题
+3. 进入 Phase 3 优化排序和滚动刷新
+
+---
+
+## Accumulated Context
+
+### Roadmap Evolution
+
+- Phase 3 added: 数据排序与滚动刷新优化
 
 ---
 
@@ -54,10 +63,11 @@ WebSocket 端点配置不匹配问题已修复：
 | WebSocket 连接 | ✅ 成功 | 显示"已连接" |
 | 爬虫状态显示 | ✅ 成功 | 显示"爬虫运行中 (xhs)" |
 | 数据推送 | ✅ 成功 | 提醒框有弹出 |
-| 刷新按钮 | ❌ Bug | 点击无反应 |
+| 刷新按钮 | ✅ 修复 | 通过内联 onclick 临时修复 |
 | 提醒框内容 | 🔧 优化 | 需要显示更新的内容标题 |
 | 提醒框频率 | ❌ Bug | 一直弹出 |
 | 数据排序 | 🔧 优化 | 最新数据应前置 |
+| 滚动刷新 | ❌ Bug | 游标刷新无反应 |
 
 ---
 

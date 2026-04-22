@@ -2,8 +2,8 @@
 
 **Created:** 2026-04-22
 **Project:** MediaCrawler 前端体验优化
-**Phases:** 2
-**Requirements:** 9
+**Phases:** 3
+**Requirements:** 12
 
 ---
 
@@ -34,11 +34,11 @@
    - 需要清理为正规事件绑定
 
 2. **数据排序**
-   - 修改 API 返回数据时按时间降序排列
-   - 或在前端渲染前排序
+   - 后端已按时间降序排列
+   - 验证前端渲染顺序
 
 3. **滚动行为**
-   - 刷新后自动滚动到顶部
+   - ✅ 刷新后自动滚动到顶部
    - 使用 `scrollIntoView({ behavior: 'smooth' })`
 
 ### Key Files
@@ -84,12 +84,56 @@
 
 ---
 
+## Phase 3: 数据排序与滚动刷新优化
+
+**Goal:** 优化卡片排序逻辑，修复滚动游标刷新问题
+
+**Status:** pending
+
+### Requirements
+
+- SORT-01: 验证并修复卡片排序问题（最新数据前置）
+- SORT-02: 修复滚动游标刷新无反应问题
+- SORT-03: 添加排序方式切换UI（按时间/按热度）
+
+### Success Criteria
+
+1. 最新爬取的数据始终显示在列表顶部
+2. 向下滚动时能正确加载更多数据
+3. 用户可以切换排序方式
+4. 排序状态在刷新后保持
+
+### Technical Approach
+
+1. **卡片排序问题排查**
+   - 检查 `read_jsonl_files()` 返回的数据顺序
+   - 验证 `time` 字段是否正确解析
+   - 在前端渲染前再次排序
+
+2. **滚动刷新问题排查**
+   - 检查滚动事件监听器是否正常工作
+   - 检查分页参数 `offset` 和 `limit` 是否正确传递
+   - 添加加载更多数据的 UI 提示
+
+3. **排序 UI**
+   - 添加排序下拉菜单
+   - 保存用户排序偏好到 localStorage
+
+### Key Files
+
+- `viewer/static/js/app.js` - 小红书前端逻辑
+- `api/routers/notes.py` - 小红书 API
+- `viewer/static/css/style.css` - 样式文件
+
+---
+
 ## Summary
 
 | Phase | Goal | Requirements | Status |
 |-------|------|--------------|--------|
 | 1 | 数据刷新与排序优化 | 4 | in_progress |
 | 2 | 提醒框优化 | 5 | pending |
+| 3 | 数据排序与滚动刷新优化 | 3 | pending |
 
 ---
 *Last updated: 2026-04-22*

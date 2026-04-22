@@ -1,8 +1,8 @@
 # Project State
 
 **Project:** MediaCrawler 前端体验优化
-**Current Phase:** Phase 2 - 提醒框优化
-**Status:** In Progress - Plan 04 completed
+**Current Phase:** Phase 3 - 数据排序与滚动刷新优化
+**Status:** Ready to plan
 **Last Updated:** 2026-04-22
 
 ---
@@ -12,7 +12,7 @@
 See: .planning/PROJECT.md (updated 2026-04-22)
 
 **Core value:** 用户能清晰看到实时更新的数据，操作流畅
-**Current focus:** 实现通知去重机制
+**Current focus:** Phase 2 完成，准备进入 Phase 3
 
 ---
 
@@ -20,44 +20,25 @@ See: .planning/PROJECT.md (updated 2026-04-22)
 
 ### Completed Phases
 
-**Phase 2 - Plan 01: 移除 stats_update 消息的通知触发**
-- [x] 移除 app.js 中 stats_update 的通知触发
-- [x] 移除 douyin-app.js 中 stats_update 的通知触发
-- [x] 移除 bilibili-app.js 中 stats_update 的通知触发
-- [x] 移除 zhihu-app.js 中 stats_update 的通知触发
+**Phase 2: 提醒框优化** ✅ Complete (2026-04-22)
 
-**Phase 2 - Plan 02: 添加通知去重机制**
-- [x] 添加 NOTIFICATION_DEDUP 数据结构
-- [x] 创建 generateNotificationHash 函数
-- [x] 创建 isDuplicateNotification 函数
-- [x] 在 showDataNotification 中应用去重逻辑
-- [x] 支持 titles 参数显示标题列表
-
-**Phase 2 - Plan 03: 后端发送新增数据和标题信息**
-- [x] 扩展 DataUpdateMessage schema 添加 new_count 和 titles 字段
-- [x] 添加平台记录计数追踪功能
-- [x] 添加获取最新记录和计数的辅助函数
-- [x] 修改 broadcast_platform_update 包含新记录信息
-
-**Phase 2 - Plan 04: 验证并调整通知显示时间**
-- [x] 验证 autoCloseTimeout 配置为 5000ms
-- [x] 确认进度条动画时间 5s 与超时时间同步
-- [x] 确认鼠标悬停暂停功能正常
+- [x] Plan 01: 移除 stats_update 消息的通知触发
+- [x] Plan 02: 添加通知去重机制
+- [x] Plan 03: 后端发送新增数据和标题信息
+- [x] Plan 04: 验证并调整通知显示时间
 
 ### Current Phase
 
-**Phase 1: 数据刷新与排序优化**
+**Phase 3: 数据排序与滚动刷新优化**
 
-- [x] 添加内联 onclick 作为刷新按钮临时修复
-- [x] 刷新后自动滚动到顶部
-- [ ] 清理内联 onclick，改用正规事件绑定
-- [ ] 验证数据排序是否正确
+- [ ] 验证并修复卡片排序问题（最新数据前置）
+- [ ] 修复滚动游标刷新无反应问题
+- [ ] 添加排序方式切换UI（按时间/按热度）
 
 ### Next Actions
 
-1. 所有 Phase 2 计划已完成
-2. 检查是否有更多计划需要执行
-3. 标记 Phase 2 为完成状态
+1. 运行 `/gsd-discuss-phase 3` 讨论设计决策
+2. 或运行 `/gsd-plan-phase 3` 直接规划
 
 ---
 

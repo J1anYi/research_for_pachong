@@ -52,15 +52,15 @@
 
 **Goal:** 修复提醒框重复弹出和内容显示问题
 
-**Status:** pending
+**Status:** complete
 
 ### Requirements
 
-- BUG-02: 修复提醒框一直弹出的问题
-- BUG-03: 修复数据统计一直显示"新增 340 条数据"的问题
-- NOTIF-01: 提醒框显示更新的内容标题
-- NOTIF-02: 提醒框维持时间延长
-- NOTIF-03: 提醒框去重
+- BUG-02: 修复提醒框一直弹出的问题 ✅
+- BUG-03: 修复数据统计一直显示"新增 340 条数据"的问题 ✅
+- NOTIF-01: 提醒框显示更新的内容标题 ✅
+- NOTIF-02: 提醒框维持时间延长 ✅
+- NOTIF-03: 提醒框去重 ✅
 
 ### Success Criteria
 
@@ -132,7 +132,7 @@
 | Phase | Goal | Requirements | Status |
 |-------|------|--------------|--------|
 | 1 | 数据刷新与排序优化 | 4 | in_progress |
-| 2 | 提醒框优化 | 5 | pending |
+| 2 | 提醒框优化 | 5 | complete |
 | 3 | 数据排序与滚动刷新优化 | 3 | pending |
 
 ---

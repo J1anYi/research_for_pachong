@@ -44,11 +44,11 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | BUG-01 | Phase 1 | Pending |
-| BUG-02 | Phase 2 | Pending |
-| BUG-03 | Phase 2 | Pending |
-| NOTIF-01 | Phase 2 | Pending |
-| NOTIF-02 | Phase 2 | Pending |
-| NOTIF-03 | Phase 2 | Pending |
+| BUG-02 | Phase 2 | Complete ✅ |
+| BUG-03 | Phase 2 | Complete ✅ |
+| NOTIF-01 | Phase 2 | Complete ✅ |
+| NOTIF-02 | Phase 2 | Complete ✅ |
+| NOTIF-03 | Phase 2 | Complete ✅ |
 | DATA-01 | Phase 3 | Pending |
 | DATA-02 | Phase 3 | Pending |
 | DATA-03 | Phase 3 | Pending |

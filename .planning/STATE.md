@@ -2,7 +2,7 @@
 
 **Project:** MediaCrawler 前端体验优化
 **Current Phase:** Phase 2 - 提醒框优化
-**Status:** In Progress - Plan 03 completed
+**Status:** In Progress - Plan 04 completed
 **Last Updated:** 2026-04-22
 
 ---
@@ -39,6 +39,11 @@ See: .planning/PROJECT.md (updated 2026-04-22)
 - [x] 添加获取最新记录和计数的辅助函数
 - [x] 修改 broadcast_platform_update 包含新记录信息
 
+**Phase 2 - Plan 04: 验证并调整通知显示时间**
+- [x] 验证 autoCloseTimeout 配置为 5000ms
+- [x] 确认进度条动画时间 5s 与超时时间同步
+- [x] 确认鼠标悬停暂停功能正常
+
 ### Current Phase
 
 **Phase 1: 数据刷新与排序优化**
@@ -50,9 +55,9 @@ See: .planning/PROJECT.md (updated 2026-04-22)
 
 ### Next Actions
 
-1. 验证后端推送功能是否正常工作
-2. 测试前端通知显示实际增量和标题
-3. 进入 Phase 2 下一个计划（如有）
+1. 所有 Phase 2 计划已完成
+2. 检查是否有更多计划需要执行
+3. 标记 Phase 2 为完成状态
 
 ---
 
@@ -96,6 +101,7 @@ WebSocket 端点配置不匹配问题已修复：
 | 通知去重 | ✅ 完成 | 5 秒窗口内相同内容只显示一次 |
 | 新增数量推送 | ✅ 完成 | 后端计算 new_count 并推送 |
 | 标题信息推送 | ✅ 完成 | 后端获取最新记录标题推送 |
+| 通知显示时间 | ✅ 验证 | 5秒满足3-5秒需求范围 |
 | 数据排序 | 🔧 优化 | 最新数据应前置 |
 | 滚动刷新 | ❌ Bug | 游标刷新无反应 |
 

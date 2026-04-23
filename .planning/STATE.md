@@ -1,44 +1,71 @@
+---
+gsd_state_version: 1.0
+milestone: v2.0
+milestone_name: milestone
+current_phase: Phase 6 - 图片存储管理
+status: pending
+last_updated: "2026-04-23T06:00:00.000Z"
+progress:
+  total_phases: 5
+  completed_phases: 2
+  total_plans: 0
+  completed_plans: 0
+---
+
 # Project State
 
-**Project:** MediaCrawler 前端体验优化
-**Current Phase:** Phase 3 - 数据排序与滚动刷新优化
-**Status:** Complete
-**Last Updated:** 2026-04-22
+**Project:** MediaCrawler 图片本地存储与任务队列
+**Current Phase:** Phase 6 - 图片存储管理
+**Status:** Pending
+**Last Updated:** 2026-04-23
 
 ---
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-04-22)
+See: .planning/PROJECT.md (updated 2026-04-23)
 
-**Core value:** 用户能清晰看到实时更新的数据，操作流畅
-**Current focus:** Phase 3 完成
+**Core value:** 图片可靠存储在本地，前端能正常显示图片
+**Current focus:** Phase 6 — 图片存储管理
 
 ---
 
 ## Progress
 
-### Completed Phases
+### Completed Milestones
 
-**Phase 2: 提醒框优化** ✅ Complete (2026-04-22)
+**Milestone v1.0: 前端体验优化** ✅ Complete (2026-04-22)
 
-- [x] Plan 01: 移除 stats_update 消息的通知触发
-- [x] Plan 02: 添加通知去重机制
-- [x] Plan 03: 后端发送新增数据和标题信息
-- [x] Plan 04: 验证并调整通知显示时间
+- Phase 1: 数据刷新与排序优化 ✅
+- Phase 2: 提醒框优化 ✅
+- Phase 3: 数据排序与滚动刷新优化 ✅
 
-**Phase 3: 数据排序与滚动刷新优化** ✅ Complete (2026-04-22)
+### Current Milestone
 
-- [x] Plan 01: 验证并修复卡片排序问题
-- [x] Plan 02: 实现无限滚动加载
-- [x] Plan 03: 添加排序方式切换UI
+**Milestone v2.0: 图片本地存储与任务队列** 🔄 In Progress
+
+- [x] Phase 4: 任务数据库与消息队列基础 ✅ (2026-04-23)
+- [x] Phase 5: 定时任务调度 ✅ (2026-04-23)
+- [ ] Phase 6: 图片存储管理
+- [ ] Phase 7: 前端图片显示优化
+- [ ] Phase 8: 爬虫集成
 
 ### Next Actions
 
-Phase 3 已完成。所有计划的功能已实现：
-- ✅ 后端排序逻辑验证通过
-- ✅ 无限滚动加载实现完成
-- ✅ 排序选择器 UI 实现完成
+Phase 5 complete. Start Phase 6:
+
+- /gsd-discuss-phase 06 — discuss next phase before planning (recommended)
+- /gsd-plan-phase 06 — plan next phase
+
+---
+
+## Phase 5 Summary
+
+| Plan | Wave | Status | Description |
+|------|------|--------|-------------|
+| 05-01 | 1 | ✅ complete | Add DB query methods (get_timeout_tasks, get_ready_retry_tasks) |
+| 05-02 | 2 | ✅ complete | Create ImageSchedulerService |
+| 05-03 | 3 | ✅ complete | Integrate with FastAPI lifespan and API |
 
 ---
 
@@ -46,49 +73,50 @@ Phase 3 已完成。所有计划的功能已实现：
 
 ### Roadmap Evolution
 
-- Phase 3 added: 数据排序与滚动刷新优化
-- Phase 3 completed: 2026-04-22
+- Milestone v1.0 completed: 2026-04-22
+- Milestone v2.0 started: 2026-04-23
+- Phase 4 completed: 2026-04-23
+- Phase 5 completed: 2026-04-23
 
 ### Key Decisions
 
-| Decision | Rationale | Phase |
-|----------|-----------|-------|
-| stats_update 不触发通知 | 每次文件变更触发两个消息导致重复通知，stats_update 仅用于统计展示 | Phase 2 Plan 01 |
-| 基于 content hash 的去重机制 | 使用 platform + titles + count 作为哈希键，5 秒时间窗口内跳过重复通知 | Phase 2 Plan 02 |
-| titles 显示最多 2 条 | 通知详情显示前 2 条标题，超出显示 "等N条"，保持简洁 | Phase 2 Plan 02 |
-| 后端计算增量而非前端 | 后端追踪记录总数变化，计算 new_count = current - previous，避免前端状态管理 | Phase 2 Plan 03 |
-| 异步读取最新记录标题 | 使用 aiofiles 异步读取 JSONL/JSON 文件，获取最新记录标题用于通知展示 | Phase 2 Plan 03 |
-| IntersectionObserver 实现无限滚动 | 使用 rootMargin: '100px' 提前触发加载，平滑用户体验 | Phase 3 Plan 02 |
-| localStorage 持久化排序偏好 | 用户选择的排序方式保存到 localStorage，下次访问保持选择 | Phase 3 Plan 03 |
+| Decision | Rationale | Milestone |
+|----------|-----------|-----------|
+| SQLite 存储任务状态 | 轻量级，无需额外依赖，适合中小规模 | v2.0 |
+| asyncio.Queue 消息队列 | Python 原生，简单可靠，适合单进程 | v2.0 |
+| asyncio 后台任务调度 | 不使用 APScheduler，减少依赖 | v2.0 |
+| URL hash 作为文件名 | 去重，避免特殊字符问题 | v2.0 |
+| 扫描间隔 5 分钟 | 平衡频率和数据库负载 | v2.0 |
+| 超时阈值 120 秒 | 容忍较慢网络，避免误判 | v2.0 |
 
 ---
 
 ## Context
 
-### What Was Fixed (Previous Phase)
+### What Was Built (v1.0)
 
-WebSocket 端点配置不匹配问题已修复：
-- `/ws/status` 端点现在连接到 `ConnectionManager`
-- 数据更新消息现在可以正确推送到前端
-- ✅ 验证通过：WebSocket 显示"已连接"，提醒框能弹出
+- WebSocket 实时数据推送
+- 提醒框去重和优化
+- 无限滚动加载
+- 数据排序和 localStorage 持久化
 
-### Validation Results
+### What Was Built (v2.0 - Phase 4 & 5)
 
-| 功能 | 状态 | 说明 |
-|------|------|------|
-| WebSocket 连接 | ✅ 成功 | 显示"已连接" |
-| 爬虫状态显示 | ✅ 成功 | 显示"爬虫运行中 (xhs)" |
-| 数据推送 | ✅ 成功 | 提醒框有弹出 |
-| 刷新按钮 | ✅ 修复 | 通过内联 onclick 临时修复 |
-| 提醒框内容 | ✅ 优化 | 支持 titles 显示标题列表 |
-| 提醒框频率 | ✅ 修复 | 移除 stats_update 触发，每次只弹一个 |
-| 通知去重 | ✅ 完成 | 5 秒窗口内相同内容只显示一次 |
-| 新增数量推送 | ✅ 完成 | 后端计算 new_count 并推送 |
-| 标题信息推送 | ✅ 完成 | 后端获取最新记录标题推送 |
-| 通知显示时间 | ✅ 验证 | 5秒满足3-5秒需求范围 |
-| 数据排序 | ✅ 完成 | 后端时间降序排列 |
-| 滚动刷新 | ✅ 完成 | 无限滚动加载实现 |
-| 排序 UI | ✅ 完成 | 排序选择器 + localStorage |
+- 图片下载任务数据库 (SQLite)
+- 任务状态管理 (pending/downloading/completed/failed)
+- 任务重试机制 (指数退避)
+- 消息队列服务 (asyncio.Queue)
+- 图片下载服务
+- 定时任务调度器 (ImageSchedulerService)
+- 任务超时检测 (120s)
+- 失败任务自动重试
+
+### What's Next (v2.0 - Phase 6)
+
+- 图片本地存储路径规划
+- 图片下载去重
+- 图片格式验证
+- 存储空间管理
 
 ---
 
@@ -99,4 +127,7 @@ WebSocket 端点配置不匹配问题已修复：
 | Project | `.planning/PROJECT.md` |
 | Requirements | `.planning/REQUIREMENTS.md` |
 | Roadmap | `.planning/ROADMAP.md` |
-| Codebase Map | `.planning/codebase/` |
+| v1.0 Summary | `.planning/reports/MILESTONE_SUMMARY-v1.0.md` |
+| Phase 4 Summary | `.planning/phases/04-renwu-shujuku-yu-xiaoxi-duilie-jichu/04-SUMMARY.md` |
+| Phase 5 Summary | `.planning/phases/05-dingshi-renwu-diaodu/05-VERIFICATION.md` |
+| Phase 5 Plans | `.planning/phases/05-dingshi-renwu-diaodu/05-*.md` |

@@ -2,12 +2,12 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: milestone
-current_phase: Phase 6 - 图片存储管理
+current_phase: Phase 7 - 前端图片显示优化
 status: pending
-last_updated: "2026-04-23T06:00:00.000Z"
+last_updated: "2026-04-23T08:00:00.000Z"
 progress:
   total_phases: 5
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 0
   completed_plans: 0
 ---
@@ -15,7 +15,7 @@ progress:
 # Project State
 
 **Project:** MediaCrawler 图片本地存储与任务队列
-**Current Phase:** Phase 6 - 图片存储管理
+**Current Phase:** Phase 7 - 前端图片显示优化
 **Status:** Pending
 **Last Updated:** 2026-04-23
 
@@ -26,7 +26,7 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-23)
 
 **Core value:** 图片可靠存储在本地，前端能正常显示图片
-**Current focus:** Phase 6 — 图片存储管理
+**Current focus:** Phase 7 — 前端图片显示优化
 
 ---
 
@@ -46,26 +46,26 @@ See: .planning/PROJECT.md (updated 2026-04-23)
 
 - [x] Phase 4: 任务数据库与消息队列基础 ✅ (2026-04-23)
 - [x] Phase 5: 定时任务调度 ✅ (2026-04-23)
-- [ ] Phase 6: 图片存储管理
+- [x] Phase 6: 图片存储管理 ✅ (2026-04-23)
 - [ ] Phase 7: 前端图片显示优化
 - [ ] Phase 8: 爬虫集成
 
 ### Next Actions
 
-Phase 5 complete. Start Phase 6:
+Phase 6 complete. Start Phase 7:
 
-- /gsd-discuss-phase 06 — discuss next phase before planning (recommended)
-- /gsd-plan-phase 06 — plan next phase
+- /gsd-discuss-phase 07 — discuss next phase before planning (recommended)
+- /gsd-plan-phase 07 — plan next phase
 
 ---
 
-## Phase 5 Summary
+## Phase 6 Summary
 
 | Plan | Wave | Status | Description |
 |------|------|--------|-------------|
-| 05-01 | 1 | ✅ complete | Add DB query methods (get_timeout_tasks, get_ready_retry_tasks) |
-| 05-02 | 2 | ✅ complete | Create ImageSchedulerService |
-| 05-03 | 3 | ✅ complete | Integrate with FastAPI lifespan and API |
+| 06-01 | 1 | ✅ complete | Create ImageStorageService |
+| 06-02 | 1 | ✅ complete | Add get_completed_task_by_url to ImageTaskDB |
+| 06-03 | 2 | ✅ complete | Integrate ImageStorageService into ImageDownloader |
 
 ---
 
@@ -77,6 +77,7 @@ Phase 5 complete. Start Phase 6:
 - Milestone v2.0 started: 2026-04-23
 - Phase 4 completed: 2026-04-23
 - Phase 5 completed: 2026-04-23
+- Phase 6 completed: 2026-04-23
 
 ### Key Decisions
 
@@ -88,6 +89,9 @@ Phase 5 complete. Start Phase 6:
 | URL hash 作为文件名 | 去重，避免特殊字符问题 | v2.0 |
 | 扫描间隔 5 分钟 | 平衡频率和数据库负载 | v2.0 |
 | 超时阈值 120 秒 | 容忍较慢网络，避免误判 | v2.0 |
+| 存储上限 5GB | 平衡存储空间和用户体验 | v2.0 |
+| LRU 清理策略 | 删除最旧文件，保留最近下载 | v2.0 |
+| PIL + magic bytes 验证 | 双重验证确保图片有效性 | v2.0 |
 
 ---
 
@@ -100,7 +104,7 @@ Phase 5 complete. Start Phase 6:
 - 无限滚动加载
 - 数据排序和 localStorage 持久化
 
-### What Was Built (v2.0 - Phase 4 & 5)
+### What Was Built (v2.0 - Phase 4, 5 & 6)
 
 - 图片下载任务数据库 (SQLite)
 - 任务状态管理 (pending/downloading/completed/failed)
@@ -110,13 +114,17 @@ Phase 5 complete. Start Phase 6:
 - 定时任务调度器 (ImageSchedulerService)
 - 任务超时检测 (120s)
 - 失败任务自动重试
+- 图片存储服务 (ImageStorageService)
+- 图片去重 (URL hash)
+- 图片格式验证 (PIL + magic bytes)
+- 存储空间管理 (LRU cleanup)
 
-### What's Next (v2.0 - Phase 6)
+### What's Next (v2.0 - Phase 7)
 
-- 图片本地存储路径规划
-- 图片下载去重
-- 图片格式验证
-- 存储空间管理
+- API 返回本地图片路径
+- 前端优先使用本地图片
+- 本地图片不存在时 fallback 到远程 URL
+- 图片加载状态显示
 
 ---
 
@@ -130,4 +138,4 @@ Phase 5 complete. Start Phase 6:
 | v1.0 Summary | `.planning/reports/MILESTONE_SUMMARY-v1.0.md` |
 | Phase 4 Summary | `.planning/phases/04-renwu-shujuku-yu-xiaoxi-duilie-jichu/04-SUMMARY.md` |
 | Phase 5 Summary | `.planning/phases/05-dingshi-renwu-diaodu/05-VERIFICATION.md` |
-| Phase 5 Plans | `.planning/phases/05-dingshi-renwu-diaodu/05-*.md` |
+| Phase 6 Summary | `.planning/phases/06-tupian-cunchu-guanli/06-VERIFICATION.md` |

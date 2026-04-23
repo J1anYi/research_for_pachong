@@ -122,11 +122,15 @@
 
 ---
 
-## Phase 6: 图片存储管理
+## Phase 6: 图片存储管理 ✅
 
 **Goal:** 实现可靠的图片存储和去重机制
 
-**Status:** pending
+**Status:** complete
+
+**Completed:** 2026-04-23
+
+**Plans:** 3
 
 ### Requirements
 
@@ -160,6 +164,21 @@
 
 - `api/services/image_storage.py` - 图片存储服务 (新建)
 - `api/services/image_task_db.py` - 添加去重查询 (修改)
+- `api/services/image_downloader.py` - 集成存储服务 (修改)
+
+### Plans
+
+| Plan | Wave | Description | Files |
+|------|------|-------------|-------|
+| 06-01 | 1 | Create ImageStorageService | image_storage.py |
+| 06-02 | 1 | Add get_completed_task_by_url | image_task_db.py |
+| 06-03 | 2 | Integrate storage into downloader | image_downloader.py |
+
+### Configuration (User Decisions)
+
+- D-01: 存储空间上限 = 5GB
+- D-02: 清理策略 = LRU (按修改时间删除最旧)
+- D-03: 验证方式 = PIL + magic bytes 双重验证
 
 ---
 
@@ -240,7 +259,7 @@
 |-------|------|--------------|--------|
 | 4 | 任务数据库与消息队列基础 | 8 | complete ✅ |
 | 5 | 定时任务调度 | 3 | complete ✅ |
-| 6 | 图片存储管理 | 4 | pending |
+| 6 | 图片存储管理 | 4 | complete ✅ |
 | 7 | 前端图片显示优化 | 4 | pending |
 | 8 | 爬虫集成 | 2 | pending |
 

@@ -27,34 +27,7 @@
 
 ---
 
-### Phase 10: B站视频下载功能
-
-**Goal:** 实现B站视频手动下载，支持大视频分片和断点续传
-
-**Requirements:** VIDEO-01, VIDEO-02, VIDEO-03, VIDEO-04, VIDEO-05, VIDEO-06, VIDEO-07, VIDEO-08, VIDEO-09, VIDEO-10
-
-**Success Criteria:**
-1. B站视频卡片显示下载按钮
-2. 点击按钮开始下载，显示进度
-3. 大视频（>50MB）自动分片下载
-4. 中断后可继续下载（断点续传）
-5. 下载失败自动重试
-
-**Approach:**
-- 后端: 创建视频任务数据库表，复用任务队列架构
-- 后端: 实现分片下载和断点续传逻辑（使用 yt-dlp）
-- 后端: 视频大小检测和分片策略
-- 前端: 下载按钮、进度显示、状态管理
-
-**Technical Notes:**
-- 复用 v2.0 的 image_task_db.py 架构创建 video_task_db.py
-- 使用 yt-dlp 进行视频下载
-- 分片大小建议: 10MB per chunk
-- 断点续传: 记录已下载字节范围
-
----
-
-### Phase 11: UI清新简约风格优化
+### Phase 10: UI清新简约风格优化
 
 **Goal:** 全面优化UI，建立清新简约的设计风格
 
@@ -81,6 +54,33 @@
 
 ---
 
+### Phase 11: B站视频下载功能
+
+**Goal:** 实现B站视频手动下载，支持大视频分片和断点续传
+
+**Requirements:** VIDEO-01, VIDEO-02, VIDEO-03, VIDEO-04, VIDEO-05, VIDEO-06, VIDEO-07, VIDEO-08, VIDEO-09, VIDEO-10
+
+**Success Criteria:**
+1. B站视频卡片显示下载按钮
+2. 点击按钮开始下载，显示进度
+3. 大视频（>50MB）自动分片下载
+4. 中断后可继续下载（断点续传）
+5. 下载失败自动重试
+
+**Approach:**
+- 后端: 创建视频任务数据库表，复用任务队列架构
+- 后端: 实现分片下载和断点续传逻辑（使用 yt-dlp）
+- 后端: 视频大小检测和分片策略
+- 前端: 下载按钮、进度显示、状态管理
+
+**Technical Notes:**
+- 复用 v2.0 的 image_task_db.py 架构创建 video_task_db.py
+- 使用 yt-dlp 进行视频下载
+- 分片大小建议: 10MB per chunk
+- 断点续传: 记录已下载字节范围
+
+---
+
 ## Completed Milestones
 
 ### [v2.0: 图片本地存储与任务队列](./milestones/v2.0-ROADMAP.md) ✅ Complete (2026-04-24)
@@ -98,8 +98,8 @@
 | Phase | Goal | Requirements | Status |
 |-------|------|--------------|--------|
 | Phase 9 | 小红书多图轮播显示 | 6 | ○ Pending |
-| Phase 10 | B站视频下载功能 | 10 | ○ Pending |
-| Phase 11 | UI清新简约风格优化 | 8 | ○ Pending |
+| Phase 10 | UI清新简约风格优化 | 8 | ○ Pending |
+| Phase 11 | B站视频下载功能 | 10 | ○ Pending |
 
 **Total:** 3 phases, 24 requirements
 

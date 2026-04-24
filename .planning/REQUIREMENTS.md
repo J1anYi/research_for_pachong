@@ -14,6 +14,17 @@
 - [ ] **CAROUSEL-05**: 点击卡片时重置轮播计时器
 - [ ] **CAROUSEL-06**: 后端API返回多图URL列表
 
+### UI优化
+
+- [ ] **UI-01**: 清新简约风格设计系统建立
+- [ ] **UI-02**: 统一配色方案（浅色系为主）
+- [ ] **UI-03**: 优化卡片布局和间距
+- [ ] **UI-04**: 优化字体层级和排版
+- [ ] **UI-05**: 优化按钮和交互元素样式
+- [ ] **UI-06**: 优化模态框样式
+- [ ] **UI-07**: 优化加载状态和过渡动画
+- [ ] **UI-08**: 响应式布局优化
+
 ### 视频下载功能
 
 - [ ] **VIDEO-01**: B站视频卡片显示下载按钮
@@ -26,17 +37,6 @@
 - [ ] **VIDEO-08**: 视频存储路径规划
 - [ ] **VIDEO-09**: 下载失败重试机制
 - [ ] **VIDEO-10**: 复用现有任务队列架构
-
-### UI优化
-
-- [ ] **UI-01**: 清新简约风格设计系统建立
-- [ ] **UI-02**: 统一配色方案（浅色系为主）
-- [ ] **UI-03**: 优化卡片布局和间距
-- [ ] **UI-04**: 优化字体层级和排版
-- [ ] **UI-05**: 优化按钮和交互元素样式
-- [ ] **UI-06**: 优化模态框样式
-- [ ] **UI-07**: 优化加载状态和过渡动画
-- [ ] **UI-08**: 响应式布局优化
 
 ## Out of Scope
 
@@ -58,24 +58,24 @@
 | CAROUSEL-04 | Phase 9 | Pending |
 | CAROUSEL-05 | Phase 9 | Pending |
 | CAROUSEL-06 | Phase 9 | Pending |
-| VIDEO-01 | Phase 10 | Pending |
-| VIDEO-02 | Phase 10 | Pending |
-| VIDEO-03 | Phase 10 | Pending |
-| VIDEO-04 | Phase 10 | Pending |
-| VIDEO-05 | Phase 10 | Pending |
-| VIDEO-06 | Phase 10 | Pending |
-| VIDEO-07 | Phase 10 | Pending |
-| VIDEO-08 | Phase 10 | Pending |
-| VIDEO-09 | Phase 10 | Pending |
-| VIDEO-10 | Phase 10 | Pending |
-| UI-01 | Phase 11 | Pending |
-| UI-02 | Phase 11 | Pending |
-| UI-03 | Phase 11 | Pending |
-| UI-04 | Phase 11 | Pending |
-| UI-05 | Phase 11 | Pending |
-| UI-06 | Phase 11 | Pending |
-| UI-07 | Phase 11 | Pending |
-| UI-08 | Phase 11 | Pending |
+| UI-01 | Phase 10 | Pending |
+| UI-02 | Phase 10 | Pending |
+| UI-03 | Phase 10 | Pending |
+| UI-04 | Phase 10 | Pending |
+| UI-05 | Phase 10 | Pending |
+| UI-06 | Phase 10 | Pending |
+| UI-07 | Phase 10 | Pending |
+| UI-08 | Phase 10 | Pending |
+| VIDEO-01 | Phase 11 | Pending |
+| VIDEO-02 | Phase 11 | Pending |
+| VIDEO-03 | Phase 11 | Pending |
+| VIDEO-04 | Phase 11 | Pending |
+| VIDEO-05 | Phase 11 | Pending |
+| VIDEO-06 | Phase 11 | Pending |
+| VIDEO-07 | Phase 11 | Pending |
+| VIDEO-08 | Phase 11 | Pending |
+| VIDEO-09 | Phase 11 | Pending |
+| VIDEO-10 | Phase 11 | Pending |
 
 **Coverage:**
 - v3.0 requirements: 24 total

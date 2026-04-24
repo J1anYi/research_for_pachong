@@ -42,3 +42,4 @@ browser_data/
 
 # Claude settings (keep these)
 # .claude/
+.gstack/

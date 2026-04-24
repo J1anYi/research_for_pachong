@@ -1,0 +1,91 @@
+- generic [ref=e2]:
+  - region "Notifications alt+T"
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - heading "Sonic Curator" [level=1] [ref=e10]
+        - button "? Shortcuts" [ref=e12] [cursor=pointer]:
+          - generic [ref=e13]: "?"
+          - generic [ref=e14]: Shortcuts
+    - generic [ref=e15]:
+      - complementary [ref=e16]:
+        - generic [ref=e17]:
+          - navigation [ref=e18]:
+            - link "Home" [ref=e19] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e23]: Home
+            - link "Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - img [ref=e26]
+              - generic [ref=e30]: Library
+            - link "Search" [ref=e32] [cursor=pointer]:
+              - /url: /search
+              - img [ref=e33]
+              - generic [ref=e36]: Search
+            - link "Profile" [ref=e37] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e38]
+              - generic [ref=e41]: Profile
+            - link "Now Playing" [ref=e42] [cursor=pointer]:
+              - /url: /player
+              - img [ref=e43]
+              - generic [ref=e48]: Now Playing
+          - generic [ref=e50]:
+            - heading "Quick Access" [level=3] [ref=e51]
+            - navigation [ref=e52]:
+              - link "Favorites" [ref=e53] [cursor=pointer]:
+                - /url: /?filter=favorites
+                - img [ref=e54]
+                - generic [ref=e56]: Favorites
+              - link "Recently Added" [ref=e57] [cursor=pointer]:
+                - /url: /?filter=all
+                - img [ref=e58]
+                - generic [ref=e61]: Recently Added
+      - main [ref=e62]:
+        - generic [ref=e400]:
+          - generic [ref=e401]:
+            - button [ref=e402] [cursor=pointer]:
+              - img [ref=e403]
+            - heading "Now Playing" [level=2] [ref=e405]
+            - button [ref=e406] [cursor=pointer]:
+              - img [ref=e407]
+          - generic [ref=e411]:
+            - button "Cover" [ref=e412] [cursor=pointer]:
+              - img [ref=e413]
+              - text: Cover
+            - button "Lyrics" [ref=e416] [cursor=pointer]:
+              - img [ref=e417]
+              - text: Lyrics
+            - button "Queue" [ref=e420] [cursor=pointer]:
+              - img [ref=e421]
+              - text: Queue
+          - img [ref=e426]
+          - generic [ref=e428]:
+            - heading "02-《独家记忆》R&B" [level=1] [ref=e429]
+            - paragraph [ref=e430]: Unknown Artist
+          - generic [ref=e431]:
+            - slider [ref=e436]
+            - generic [ref=e437]:
+              - generic [ref=e438]: 0:22
+              - generic [ref=e439]: 5:20
+          - generic [ref=e440]:
+            - button [ref=e441] [cursor=pointer]:
+              - img [ref=e442]
+            - button [ref=e448] [cursor=pointer]:
+              - img [ref=e449]
+            - button [ref=e451] [cursor=pointer]:
+              - img [ref=e453]
+            - button [ref=e456] [cursor=pointer]:
+              - img [ref=e457]
+            - button [ref=e459] [cursor=pointer]:
+              - img [ref=e460]
+          - generic [ref=e465]:
+            - button [ref=e466] [cursor=pointer]:
+              - img [ref=e467]
+            - button [ref=e469] [cursor=pointer]:
+              - img [ref=e470]
+            - button [ref=e473] [cursor=pointer]:
+              - img [ref=e474]
+            - button [ref=e480] [cursor=pointer]:
+              - img [ref=e481]

@@ -1,0 +1,53 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "Media Command Center" [level=1] [ref=e4]
+    - generic [ref=e8]:
+      - generic "WebSocket 连接状态" [ref=e9]:
+        - generic [ref=e11]: 已连接
+      - button "↻ 刷新" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ↻
+        - generic [ref=e14]: 刷新
+  - tablist "平台切换" [ref=e16]:
+    - tab "📕 小红书" [ref=e17] [cursor=pointer]:
+      - generic [ref=e18]: 📕
+      - text: 小红书
+    - tab "🎵 抖音" [active] [selected] [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]: 🎵
+      - text: 抖音
+    - tab "◈ 知乎" [ref=e21] [cursor=pointer]:
+      - generic [ref=e22]: ◈
+      - text: 知乎
+    - tab "📺 B站" [ref=e23] [cursor=pointer]:
+      - generic [ref=e24]: 📺
+      - text: B站
+    - tab "📋 订阅管理" [ref=e25] [cursor=pointer]:
+      - generic [ref=e26]: 📋
+      - text: 订阅管理
+  - tabpanel "🎵 抖音" [ref=e1355]:
+    - generic [ref=e1356]:
+      - generic [ref=e1357]:
+        - generic [ref=e1358]:
+          - generic [ref=e1359]: "0"
+          - generic [ref=e1360]: 视频总数
+        - generic [ref=e1361]:
+          - generic [ref=e1362]: "0"
+          - generic [ref=e1363]: 播放总量
+        - generic [ref=e1364]:
+          - generic [ref=e1365]: "0"
+          - generic [ref=e1366]: 点赞总量
+        - generic [ref=e1367]:
+          - generic [ref=e1368]: "0"
+          - generic [ref=e1369]: 评论总数
+      - generic [ref=e1370]:
+        - combobox [ref=e1371] [cursor=pointer]:
+          - option "全部关键词" [selected]
+        - textbox "搜索视频标题..." [ref=e1372]
+        - button "↻ 刷新" [ref=e1373] [cursor=pointer]:
+          - generic [ref=e1374]: ↻
+          - generic [ref=e1375]: 刷新
+        - generic [ref=e1376]: 更新于 14:20
+    - main [ref=e1377]:
+      - generic [ref=e1378]:
+        - generic [ref=e1379]: ◇
+        - paragraph [ref=e1380]: 暂无抖音数据
+        - paragraph [ref=e1381]: 请先运行抖音爬虫获取数据

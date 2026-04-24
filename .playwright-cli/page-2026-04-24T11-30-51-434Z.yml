@@ -1,0 +1,43 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - heading "Media Command Center" [level=1] [ref=e4]
+    - generic [ref=e5]:
+      - combobox [ref=e6] [cursor=pointer]:
+        - option "全部关键词" [selected]
+      - textbox "搜索内容..." [ref=e7]
+    - generic [ref=e8]:
+      - generic "WebSocket 连接状态" [ref=e9]:
+        - generic [ref=e11]: 连接中...
+      - button "↻ 刷新" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ↻
+        - generic [ref=e14]: 刷新
+  - tablist "平台切换" [ref=e16]:
+    - tab "📕 小红书" [selected] [ref=e17] [cursor=pointer]:
+      - generic [ref=e18]: 📕
+      - text: 小红书
+    - tab "🎵 抖音" [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]: 🎵
+      - text: 抖音
+    - tab "◈ 知乎" [ref=e21] [cursor=pointer]:
+      - generic [ref=e22]: ◈
+      - text: 知乎
+    - tab "📺 B站" [ref=e23] [cursor=pointer]:
+      - generic [ref=e24]: 📺
+      - text: B站
+    - tab "📋 订阅管理" [ref=e25] [cursor=pointer]:
+      - generic [ref=e26]: 📋
+      - text: 订阅管理
+  - tabpanel "📕 小红书" [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e32]: 连接中...
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: "0"
+          - generic [ref=e36]: 笔记总数
+        - generic [ref=e37]:
+          - generic [ref=e38]: "0"
+          - generic [ref=e39]: 图片总数
+    - main [ref=e40]:
+      - combobox [ref=e42] [cursor=pointer]:
+        - option "最新发布" [selected]
+      - paragraph [ref=e45]: 加载中...

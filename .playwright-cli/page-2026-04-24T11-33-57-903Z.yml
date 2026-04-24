@@ -1,0 +1,234 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "Media Command Center" [level=1] [ref=e4]
+    - generic [ref=e8]:
+      - generic "WebSocket 连接状态" [ref=e9]:
+        - generic [ref=e11]: 已连接
+      - button "↻ 刷新" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ↻
+        - generic [ref=e14]: 刷新
+  - tablist "平台切换" [ref=e16]:
+    - tab "📕 小红书" [ref=e17] [cursor=pointer]:
+      - generic [ref=e18]: 📕
+      - text: 小红书
+    - tab "🎵 抖音" [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]: 🎵
+      - text: 抖音
+    - tab "◈ 知乎" [ref=e21] [cursor=pointer]:
+      - generic [ref=e22]: ◈
+      - text: 知乎
+    - tab "📺 B站" [active] [selected] [ref=e23] [cursor=pointer]:
+      - generic [ref=e24]: 📺
+      - text: B站
+    - tab "📋 订阅管理" [ref=e25] [cursor=pointer]:
+      - generic [ref=e26]: 📋
+      - text: 订阅管理
+  - tabpanel "📺 B站" [ref=e1358]:
+    - generic [ref=e1359]:
+      - generic [ref=e1360]:
+        - generic [ref=e1361]:
+          - generic [ref=e1362]: "10"
+          - generic [ref=e1363]: 视频总数
+        - generic [ref=e1364]:
+          - generic [ref=e1365]: 795.7W
+          - generic [ref=e1366]: 播放总量
+        - generic [ref=e1367]:
+          - generic [ref=e1368]: 44.7W
+          - generic [ref=e1369]: 点赞总量
+        - generic [ref=e1370]:
+          - generic [ref=e1371]: "80"
+          - generic [ref=e1372]: 评论总数
+      - generic [ref=e1373]:
+        - generic [ref=e1374]: "popular: 9"
+        - generic [ref=e1375]: "unknown: 1"
+      - generic [ref=e1376]:
+        - combobox [ref=e1377] [cursor=pointer]:
+          - option "All Sources" [selected]
+          - option "popular"
+        - textbox "Search video title..." [ref=e1378]
+        - button "↻ Refresh" [ref=e1379] [cursor=pointer]:
+          - generic [ref=e1380]: ↻
+          - generic [ref=e1381]: Refresh
+        - generic [ref=e1382]: Updated 19:33
+    - main [ref=e1383]:
+      - generic [ref=e1384]:
+        - generic [ref=e1385] [cursor=pointer]:
+          - generic [ref=e1386]:
+            - button "下载视频" [ref=e1388]:
+              - img [ref=e1389]
+            - generic [ref=e1391]: Video
+          - generic [ref=e1392]:
+            - heading "洛天依 原创《告死鸟》" [level=3] [ref=e1393]
+            - generic [ref=e1396]: ilem
+            - generic [ref=e1397]:
+              - generic [ref=e1398]:
+                - img [ref=e1399]
+                - text: 16.5W
+              - generic [ref=e1401]:
+                - img [ref=e1402]
+                - text: 4.0W
+              - generic [ref=e1404]:
+                - img [ref=e1405]
+                - text: 3.6W
+        - generic [ref=e1407] [cursor=pointer]:
+          - generic [ref=e1408]:
+            - button "下载视频" [ref=e1410]:
+              - img [ref=e1411]
+            - generic [ref=e1413]: Video
+          - generic [ref=e1414]:
+            - heading "数学这东西，还得跟你田老师学！" [level=3] [ref=e1415]
+            - generic [ref=e1418]: 田一名sir
+            - generic [ref=e1419]:
+              - generic [ref=e1420]:
+                - img [ref=e1421]
+                - text: 86.0W
+              - generic [ref=e1423]:
+                - img [ref=e1424]
+                - text: 5.2W
+              - generic [ref=e1426]:
+                - img [ref=e1427]
+                - text: 3.7K
+        - generic [ref=e1429] [cursor=pointer]:
+          - generic [ref=e1430]:
+            - button "下载视频" [ref=e1432]:
+              - img [ref=e1433]
+            - generic [ref=e1435]: Video
+          - generic [ref=e1436]:
+            - heading "绝望！一晚上氪金30万打水漂！洛克王国收集黑白炫彩到底有多难？" [level=3] [ref=e1437]
+            - generic [ref=e1440]: 一叮当猫一
+            - generic [ref=e1441]:
+              - generic [ref=e1442]:
+                - img [ref=e1443]
+                - text: 29.3W
+              - generic [ref=e1445]:
+                - img [ref=e1446]
+                - text: 1.4W
+              - generic [ref=e1448]:
+                - img [ref=e1449]
+                - text: 5.8K
+        - generic [ref=e1451] [cursor=pointer]:
+          - generic [ref=e1452]:
+            - button "下载视频" [ref=e1454]:
+              - img [ref=e1455]
+            - generic [ref=e1457]: Video
+          - generic [ref=e1458]:
+            - heading "见面5秒开始战斗" [level=3] [ref=e1459]
+            - generic [ref=e1462]: 万灵缝合厂
+            - generic [ref=e1463]:
+              - generic [ref=e1464]:
+                - img [ref=e1465]
+                - text: 111.8W
+              - generic [ref=e1467]:
+                - img [ref=e1468]
+                - text: 8.9W
+              - generic [ref=e1470]:
+                - img [ref=e1471]
+                - text: 2.5W
+        - generic [ref=e1473] [cursor=pointer]:
+          - generic [ref=e1474]:
+            - button "下载视频" [ref=e1476]:
+              - img [ref=e1477]
+            - generic [ref=e1479]: Video
+          - generic [ref=e1480]:
+            - heading "二舅彻底退场！" [level=3] [ref=e1481]
+            - generic [ref=e1484]: 爱画画的子衿
+            - generic [ref=e1485]:
+              - generic [ref=e1486]:
+                - img [ref=e1487]
+                - text: 48.7W
+              - generic [ref=e1489]:
+                - img [ref=e1490]
+                - text: 5.3W
+              - generic [ref=e1492]:
+                - img [ref=e1493]
+                - text: 4.8W
+        - generic [ref=e1495] [cursor=pointer]:
+          - generic [ref=e1496]:
+            - button "下载视频" [ref=e1498]:
+              - img [ref=e1499]
+            - generic [ref=e1501]: Video
+          - generic [ref=e1502]:
+            - heading "10星罗隐解放大脑，快速启动，贪婪一开直接开打" [level=3] [ref=e1503]
+            - generic [ref=e1506]: 磊哥游戏
+            - generic [ref=e1507]:
+              - generic [ref=e1508]:
+                - img [ref=e1509]
+                - text: 76.4W
+              - generic [ref=e1511]:
+                - img [ref=e1512]
+                - text: 4.4W
+              - generic [ref=e1514]:
+                - img [ref=e1515]
+                - text: 1.6K
+        - generic [ref=e1517] [cursor=pointer]:
+          - generic [ref=e1518]:
+            - button "下载视频" [ref=e1520]:
+              - img [ref=e1521]
+            - generic [ref=e1523]: Video
+          - generic [ref=e1524]:
+            - heading "“当别人问我这辈子什么时候最紧张”" [level=3] [ref=e1525]
+            - generic [ref=e1528]: Maybe眉笔笔笔
+            - generic [ref=e1529]:
+              - generic [ref=e1530]:
+                - img [ref=e1531]
+                - text: 25.1W
+              - generic [ref=e1533]:
+                - img [ref=e1534]
+                - text: 2.5W
+              - generic [ref=e1536]:
+                - img [ref=e1537]
+                - text: 4.1K
+        - generic [ref=e1539] [cursor=pointer]:
+          - generic [ref=e1540]:
+            - button "下载视频" [ref=e1542]:
+              - img [ref=e1543]
+            - generic [ref=e1545]: Video
+          - generic [ref=e1546]:
+            - heading "体验跟成都视觉系玩一天，路边大哥说他也想这么穿" [level=3] [ref=e1547]
+            - generic [ref=e1550]: 旺卡_Wonka
+            - generic [ref=e1551]:
+              - generic [ref=e1552]:
+                - img [ref=e1553]
+                - text: 50.3W
+              - generic [ref=e1555]:
+                - img [ref=e1556]
+                - text: 1.1W
+              - generic [ref=e1558]:
+                - img [ref=e1559]
+                - text: "913"
+        - generic [ref=e1561] [cursor=pointer]:
+          - generic [ref=e1562]:
+            - button "下载视频" [ref=e1564]:
+              - img [ref=e1565]
+            - generic [ref=e1567]: Video
+          - generic [ref=e1568]:
+            - heading "【恬欣欣】春日进行曲～" [level=3] [ref=e1569]
+            - generic [ref=e1572]: 恬欣欣的成长日记
+            - generic [ref=e1573]:
+              - generic [ref=e1574]:
+                - img [ref=e1575]
+                - text: 37.1W
+              - generic [ref=e1577]:
+                - img [ref=e1578]
+                - text: 1.2W
+              - generic [ref=e1580]:
+                - img [ref=e1581]
+                - text: 1.3K
+        - generic [ref=e1583] [cursor=pointer]:
+          - generic [ref=e1584]:
+            - button "下载视频" [ref=e1586]:
+              - img [ref=e1587]
+            - generic [ref=e1589]: Video
+          - generic [ref=e1590]:
+            - heading "贾斯汀比伯《Baby》，但是印度风格" [level=3] [ref=e1591]
+            - generic [ref=e1594]: 寂寞的渲染_
+            - generic [ref=e1595]:
+              - generic [ref=e1596]:
+                - img [ref=e1597]
+                - text: 314.5W
+              - generic [ref=e1599]:
+                - img [ref=e1600]
+                - text: 10.6W
+              - generic [ref=e1602]:
+                - img [ref=e1603]
+                - text: 3.3W

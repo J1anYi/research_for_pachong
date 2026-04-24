@@ -1,0 +1,207 @@
+- generic [ref=e2]:
+  - region "Notifications alt+T"
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - heading "Sonic Curator" [level=1] [ref=e10]
+        - button "? Shortcuts" [ref=e12] [cursor=pointer]:
+          - generic [ref=e13]: "?"
+          - generic [ref=e14]: Shortcuts
+    - generic [ref=e15]:
+      - complementary [ref=e16]:
+        - generic [ref=e17]:
+          - navigation [ref=e18]:
+            - link "Home" [ref=e19] [cursor=pointer]:
+              - /url: /
+              - img [ref=e20]
+              - generic [ref=e23]: Home
+            - link "Library" [ref=e24] [cursor=pointer]:
+              - /url: /library
+              - img [ref=e26]
+              - generic [ref=e30]: Library
+            - link "Search" [ref=e32] [cursor=pointer]:
+              - /url: /search
+              - img [ref=e33]
+              - generic [ref=e36]: Search
+            - link "Profile" [ref=e37] [cursor=pointer]:
+              - /url: /profile
+              - img [ref=e38]
+              - generic [ref=e41]: Profile
+            - link "Now Playing" [ref=e42] [cursor=pointer]:
+              - /url: /player
+              - img [ref=e43]
+              - generic [ref=e48]: Now Playing
+          - generic [ref=e50]:
+            - heading "Quick Access" [level=3] [ref=e51]
+            - navigation [ref=e52]:
+              - link "Favorites" [ref=e53] [cursor=pointer]:
+                - /url: /?filter=favorites
+                - img [ref=e54]
+                - generic [ref=e56]: Favorites
+              - link "Recently Added" [ref=e57] [cursor=pointer]:
+                - /url: /?filter=all
+                - img [ref=e58]
+                - generic [ref=e61]: Recently Added
+      - main [ref=e62]:
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - heading "Library" [level=1] [ref=e65]
+            - paragraph [ref=e66]: Browse your entire music collection
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - img [ref=e69]
+              - textbox "Search in library..." [ref=e72]
+            - button "Sort" [ref=e74] [cursor=pointer]:
+              - img [ref=e75]
+              - generic [ref=e76]: Sort
+          - generic [ref=e77]:
+            - generic [ref=e79] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e86]:
+                - heading "02-《独家记忆》R&B" [level=3] [ref=e87]
+                - paragraph [ref=e88]: Unknown Artist
+              - generic [ref=e89]: 5:19
+              - button [ref=e90]:
+                - img [ref=e357]
+              - button [ref=e94]:
+                - img [ref=e95]
+            - generic [ref=e100] [cursor=pointer]:
+              - img "青花瓷" [ref=e102]
+              - generic [ref=e103]:
+                - heading "青花瓷" [level=3] [ref=e104]
+                - paragraph [ref=e105]: 周杰伦 • 我很忙
+              - generic [ref=e106]: 3:59
+              - button [ref=e107]:
+                - img [ref=e108]
+              - button [ref=e111]:
+                - img [ref=e112]
+            - generic [ref=e117] [cursor=pointer]:
+              - img [ref=e120]
+              - generic [ref=e124]:
+                - heading "【卖萌の小曲】“💗微笑再美再甜不是你的都不特别💗”《室内系的TrackMaker×只对你有感觉》_VIP" [level=3] [ref=e125]
+                - paragraph [ref=e126]: 永雏塔菲
+              - generic [ref=e127]: 2:14
+              - button [ref=e128]:
+                - img [ref=e129]
+              - button [ref=e132]:
+                - img [ref=e133]
+            - generic [ref=e138] [cursor=pointer]:
+              - img [ref=e141]
+              - generic [ref=e145]:
+                - heading "多远都要在一起-邓紫棋-黑人福音版" [level=3] [ref=e146]
+                - paragraph [ref=e147]: Unknown Artist
+              - generic [ref=e148]: 3:58
+              - button [ref=e149]:
+                - img [ref=e150]
+              - button [ref=e153]:
+                - img [ref=e154]
+            - generic [ref=e159] [cursor=pointer]:
+              - img [ref=e162]
+              - generic [ref=e166]:
+                - heading "【卖萌の小曲】“💗微笑再美再甜不是你的都不特别💗”《室内系的TrackMaker×只对你有感觉》_VIP" [level=3] [ref=e167]
+                - paragraph [ref=e168]: Unknown Artist
+              - generic [ref=e169]: 2:14
+              - button [ref=e170]:
+                - img [ref=e171]
+              - button [ref=e174]:
+                - img [ref=e175]
+            - generic [ref=e180] [cursor=pointer]:
+              - img [ref=e183]
+              - generic [ref=e187]:
+                - heading "【卖萌の小曲】\"💗微笑再美再甜不是你的都不特别💗\"《室内系的TrackMaker×只对你有感觉》_VIP" [level=3] [ref=e188]
+                - paragraph [ref=e189]: 测试艺术家
+              - generic [ref=e190]: 0:00
+              - button [ref=e191]:
+                - img [ref=e192]
+              - button [ref=e195]:
+                - img [ref=e196]
+            - generic [ref=e201] [cursor=pointer]:
+              - img [ref=e204]
+              - generic [ref=e208]:
+                - heading "【卖萌の小曲】测试" [level=3] [ref=e209]
+                - paragraph [ref=e210]: Unknown Artist
+              - generic [ref=e211]: 0:00
+              - button [ref=e212]:
+                - img [ref=e213]
+              - button [ref=e216]:
+                - img [ref=e217]
+            - generic [ref=e222] [cursor=pointer]:
+              - img [ref=e225]
+              - generic [ref=e229]:
+                - 'heading "ãåèã®å°æ²ãæµè¯" [level=3] [ref=e230]'
+                - paragraph [ref=e231]: Unknown Artist
+              - generic [ref=e232]: 0:00
+              - button [ref=e233]:
+                - img [ref=e234]
+              - button [ref=e237]:
+                - img [ref=e238]
+            - generic [ref=e243] [cursor=pointer]:
+              - img [ref=e246]
+              - generic [ref=e250]:
+                - heading "【卖萌の小曲】测试标题" [level=3] [ref=e251]
+                - paragraph [ref=e252]: 测试艺术家
+              - generic [ref=e253]: 0:00
+              - button [ref=e254]:
+                - img [ref=e255]
+              - button [ref=e258]:
+                - img [ref=e259]
+            - generic [ref=e264] [cursor=pointer]:
+              - img [ref=e267]
+              - generic [ref=e271]:
+                - heading "%E3%80%90%E5%8D%96%E8%90%8C%E3%81%AE%E5%B0%8F%E6%9B%B2%E3%80%91%E6%B5%8B%E8%AF%95" [level=3] [ref=e272]
+                - paragraph [ref=e273]: Unknown Artist
+              - generic [ref=e274]: 0:00
+              - button [ref=e275]:
+                - img [ref=e276]
+              - button [ref=e279]:
+                - img [ref=e280]
+            - generic [ref=e285] [cursor=pointer]:
+              - img [ref=e288]
+              - generic [ref=e292]:
+                - heading "�����Ȥ�С����\"??΢Ц������������Ķ����ر�??\"������ϵ��TrackMaker��ֻ�����ио���_VIP" [level=3] [ref=e293]
+                - paragraph [ref=e294]: ����������
+              - generic [ref=e295]: 0:00
+              - button [ref=e296]:
+                - img [ref=e297]
+              - button [ref=e300]:
+                - img [ref=e301]
+            - generic [ref=e306] [cursor=pointer]:
+              - img [ref=e309]
+              - generic [ref=e313]:
+                - 'heading "ãåèã®å°æ²ãâðå¾®ç¬åç¾åçä¸æ¯ä½ çé½ä¸ç¹å«ðâãå®¤åç³»çTrackMakerÃåªå¯¹ä½ ææè§ã_VIP" [level=3] [ref=e314]'
+                - paragraph [ref=e315]: Unknown Artist
+              - generic [ref=e316]: 2:14
+              - button [ref=e317]:
+                - img [ref=e318]
+              - button [ref=e321]:
+                - img [ref=e322]
+            - generic [ref=e327] [cursor=pointer]:
+              - img [ref=e330]
+              - generic [ref=e334]:
+                - 'heading "ãåèã®å°æ²ãâðå¾®ç¬åç¾åçä¸æ¯ä½ çé½ä¸ç¹å«ðâãå®¤åç³»çTrackMakerÃåªå¯¹ä½ ææè§ã_VIP" [level=3] [ref=e335]'
+                - paragraph [ref=e336]: Unknown Artist
+              - generic [ref=e337]: 2:14
+              - button [ref=e338]:
+                - img [ref=e339]
+              - button [ref=e342]:
+                - img [ref=e343]
+    - generic [ref=e360] [cursor=pointer]:
+      - img [ref=e363]
+      - generic [ref=e367]:
+        - heading "02-《独家记忆》R&B" [level=3] [ref=e368]
+        - paragraph [ref=e369]: Unknown Artist
+      - generic [ref=e371]:
+        - generic [ref=e372]: 0:01
+        - generic [ref=e373]: /
+        - generic [ref=e374]: 5:20
+      - generic [ref=e377]:
+        - button "Previous track" [ref=e378]:
+          - img [ref=e379]
+        - button [ref=e381]:
+          - img [ref=e383]
+        - button "Next track" [ref=e386]:
+          - img [ref=e387]
+      - generic [ref=e389]:
+        - button "Mute" [ref=e390]:
+          - img [ref=e391]
+        - slider [ref=e395]: "0.8"

@@ -1,0 +1,1258 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "Media Command Center" [level=1] [ref=e4]
+    - generic [ref=e5]:
+      - combobox [ref=e6] [cursor=pointer]:
+        - option "全部关键词" [selected]
+      - textbox "搜索内容..." [ref=e7]
+    - generic [ref=e8]:
+      - generic "WebSocket 连接状态" [ref=e9]:
+        - generic [ref=e11]: 已连接
+      - button "↻ 刷新" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ↻
+        - generic [ref=e14]: 刷新
+  - tablist "平台切换" [ref=e16]:
+    - tab "📕 小红书" [active] [selected] [ref=e17] [cursor=pointer]:
+      - generic [ref=e18]: 📕
+      - text: 小红书
+    - tab "🎵 抖音" [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]: 🎵
+      - text: 抖音
+    - tab "◈ 知乎" [ref=e21] [cursor=pointer]:
+      - generic [ref=e22]: ◈
+      - text: 知乎
+    - tab "📺 B站" [ref=e23] [cursor=pointer]:
+      - generic [ref=e24]: 📺
+      - text: B站
+    - tab "📋 订阅管理" [ref=e25] [cursor=pointer]:
+      - generic [ref=e26]: 📋
+      - text: 订阅管理
+  - tabpanel "📕 小红书" [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e32]: idle
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: "0"
+          - generic [ref=e36]: 笔记总数
+        - generic [ref=e37]:
+          - generic [ref=e38]: "0"
+          - generic [ref=e39]: 图片总数
+    - main [ref=e40]:
+      - combobox [ref=e42] [cursor=pointer]:
+        - option "最新发布" [selected]
+      - generic [ref=e46]:
+        - generic [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: 🎬
+            - generic [ref=e50]: 🎬 视频
+          - generic [ref=e51]:
+            - heading "3个 vibe coding 项目,如何月入过万!" [level=3] [ref=e52]
+            - generic [ref=e53]: 4天前
+            - generic [ref=e54]:
+              - generic [ref=e55]:
+                - img [ref=e56]
+                - generic [ref=e57]: AI冷科长
+              - generic [ref=e58]:
+                - generic [ref=e59]: 👍 93
+                - generic [ref=e60]: ⭐ 120
+        - generic [ref=e61] [cursor=pointer]:
+          - generic [ref=e63]: 📝
+          - generic [ref=e64]:
+            - heading "本人没有经济学背景，python编程经验几乎为零。 1.2025年7月中旬:最初知道worldquant是在boss上看到python兼职，大概是填写邀请码，保证第一个月800，后面可能会涨(到现在也没搞清楚boss上面这个照聘发工资的逻辑，可能是虚假宣传因为工资就是这个wq平台给的，boss上面的应该不会给工资吧) 2:2025年8月中旬成为了顾问，成为顾问后提交了只提交了两个策略，得到2.77$，账号在10月中旬被管控后，我就结束了在这个平台上的工作。 3.2026年4月初，我又开始了在wq上面的东西" [level=3] [ref=e65]
+            - generic [ref=e66]: 4天前
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - img [ref=e69]
+                - generic [ref=e70]: 卐
+              - generic [ref=e71]:
+                - generic [ref=e72]: 👍 34
+                - generic [ref=e73]: ⭐ 29
+        - generic [ref=e74] [cursor=pointer]:
+          - generic [ref=e76]: 📝
+          - generic [ref=e77]:
+            - heading "本人没有经济学背景，python编程经验几乎为零。 1.2025年7月中旬:最初知道worldquant是在boss上看到python兼职，大概是填写邀请码，保证第一个月800，后面可能会涨(到现在也没搞清楚boss上面这个照聘发工资的逻辑，可能是虚假宣传因为工资就是这个wq平台给的，boss上面的应该不会给工资吧) 2:2025年8月中旬成为了顾问，成为顾问后提交了只提交了两个策略，得到2.77$，账号在10月中旬被管控后，我就结束了在这个平台上的工作。 3.2026年4月初，我又开始了在wq上面的东西" [level=3] [ref=e78]
+            - generic [ref=e79]: 4天前
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - img [ref=e82]
+                - generic [ref=e83]: 卐
+              - generic [ref=e84]:
+                - generic [ref=e85]: 👍 34
+                - generic [ref=e86]: ⭐ 29
+        - generic [ref=e87] [cursor=pointer]:
+          - generic [ref=e89]: 📝
+          - generic [ref=e90]:
+            - heading "本人没有经济学背景，python编程经验几乎为零。 1.2025年7月中旬:最初知道worldquant是在boss上看到python兼职，大概是填写邀请码，保证第一个月800，后面可能会涨(到现在也没搞清楚boss上面这个照聘发工资的逻辑，可能是虚假宣传因为工资就是这个wq平台给的，boss上面的应该不会给工资吧) 2:2025年8月中旬成为了顾问，成为顾问后提交了只提交了两个策略，得到2.77$，账号在10月中旬被管控后，我就结束了在这个平台上的工作。 3.2026年4月初，我又开始了在wq上面的东西" [level=3] [ref=e91]
+            - generic [ref=e92]: 4天前
+            - generic [ref=e93]:
+              - generic [ref=e94]:
+                - img [ref=e95]
+                - generic [ref=e96]: 卐
+              - generic [ref=e97]:
+                - generic [ref=e98]: 👍 34
+                - generic [ref=e99]: ⭐ 29
+        - generic [ref=e100] [cursor=pointer]:
+          - generic [ref=e102]: 📝
+          - generic [ref=e103]:
+            - heading "本人没有经济学背景，python编程经验几乎为零。 1.2025年7月中旬:最初知道worldquant是在boss上看到python兼职，大概是填写邀请码，保证第一个月800，后面可能会涨(到现在也没搞清楚boss上面这个照聘发工资的逻辑，可能是虚假宣传因为工资就是这个wq平台给的，boss上面的应该不会给工资吧) 2:2025年8月中旬成为了顾问，成为顾问后提交了只提交了两个策略，得到2.77$，账号在10月中旬被管控后，我就结束了在这个平台上的工作。 3.2026年4月初，我又开始了在wq上面的东西" [level=3] [ref=e104]
+            - generic [ref=e105]: 4天前
+            - generic [ref=e106]:
+              - generic [ref=e107]:
+                - img [ref=e108]
+                - generic [ref=e109]: 卐
+              - generic [ref=e110]:
+                - generic [ref=e111]: 👍 34
+                - generic [ref=e112]: ⭐ 29
+        - generic [ref=e113] [cursor=pointer]:
+          - generic [ref=e115]: 📝
+          - generic [ref=e116]:
+            - heading "本人没有经济学背景，python编程经验几乎为零。 1.2025年7月中旬:最初知道worldquant是在boss上看到python兼职，大概是填写邀请码，保证第一个月800，后面可能会涨(到现在也没搞清楚boss上面这个照聘发工资的逻辑，可能是虚假宣传因为工资就是这个wq平台给的，boss上面的应该不会给工资吧) 2:2025年8月中旬成为了顾问，成为顾问后提交了只提交了两个策略，得到2.77$，账号在10月中旬被管控后，我就结束了在这个平台上的工作。 3.2026年4月初，我又开始了在wq上面的东西" [level=3] [ref=e117]
+            - generic [ref=e118]: 4天前
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - img [ref=e121]
+                - generic [ref=e122]: 卐
+              - generic [ref=e123]:
+                - generic [ref=e124]: 👍 44
+                - generic [ref=e125]: ⭐ 36
+        - generic [ref=e126] [cursor=pointer]:
+          - generic [ref=e128]: 📝
+          - generic [ref=e129]:
+            - heading "程序员接私活，周末不休息，又肝到半夜了" [level=3] [ref=e130]
+            - generic [ref=e131]: 2026-04-13
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - img [ref=e134]
+                - generic [ref=e135]: 深漂程序员犬夜叉
+              - generic [ref=e136]:
+                - generic [ref=e137]: 👍 67
+                - generic [ref=e138]: ⭐ 25
+        - generic [ref=e139] [cursor=pointer]:
+          - generic [ref=e141]: 📝
+          - generic [ref=e142]:
+            - heading "程序员接私活，周末不休息，又肝到半夜了" [level=3] [ref=e143]
+            - generic [ref=e144]: 2026-04-13
+            - generic [ref=e145]:
+              - generic [ref=e146]:
+                - img [ref=e147]
+                - generic [ref=e148]: 深漂程序员犬夜叉
+              - generic [ref=e149]:
+                - generic [ref=e150]: 👍 67
+                - generic [ref=e151]: ⭐ 25
+        - generic [ref=e152] [cursor=pointer]:
+          - generic [ref=e154]: 📝
+          - generic [ref=e155]:
+            - heading "程序员接私活，4天搞定别人报价5w的项目" [level=3] [ref=e156]
+            - generic [ref=e157]: 2026-04-12
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - img [ref=e160]
+                - generic [ref=e161]: 核动力编程
+              - generic [ref=e162]:
+                - generic [ref=e163]: 👍 90
+                - generic [ref=e164]: ⭐ 70
+        - generic [ref=e165] [cursor=pointer]:
+          - generic [ref=e167]: 📝
+          - generic [ref=e168]:
+            - heading "程序员接私活，4天搞定别人报价5w的项目" [level=3] [ref=e169]
+            - generic [ref=e170]: 2026-04-12
+            - generic [ref=e171]:
+              - generic [ref=e172]:
+                - img [ref=e173]
+                - generic [ref=e174]: 核动力编程
+              - generic [ref=e175]:
+                - generic [ref=e176]: 👍 93
+                - generic [ref=e177]: ⭐ 77
+        - generic [ref=e178] [cursor=pointer]:
+          - generic [ref=e180]: 📝
+          - generic [ref=e181]:
+            - heading "网站开发human study受试招募（有偿）" [level=3] [ref=e182]
+            - generic [ref=e183]: 2026-04-11
+            - generic [ref=e184]:
+              - generic [ref=e185]:
+                - img [ref=e186]
+                - generic [ref=e187]: momo
+              - generic [ref=e188]:
+                - generic [ref=e189]: 👍 29
+                - generic [ref=e190]: ⭐ 43
+        - generic [ref=e191] [cursor=pointer]:
+          - generic [ref=e193]: 📝
+          - generic [ref=e194]:
+            - heading "有没有编程单子、求单！" [level=3] [ref=e195]
+            - generic [ref=e196]: 2026-04-11
+            - generic [ref=e197]:
+              - generic [ref=e198]:
+                - img [ref=e199]
+                - generic [ref=e200]: 小鹿学姐
+              - generic [ref=e201]:
+                - generic [ref=e202]: 👍 18
+                - generic [ref=e203]: ⭐ 11
+        - generic [ref=e204] [cursor=pointer]:
+          - generic [ref=e206]: 📝
+          - generic [ref=e207]:
+            - heading "有没有编程单子、求单！" [level=3] [ref=e208]
+            - generic [ref=e209]: 2026-04-11
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - img [ref=e212]
+                - generic [ref=e213]: 小鹿学姐
+              - generic [ref=e214]:
+                - generic [ref=e215]: 👍 18
+                - generic [ref=e216]: ⭐ 11
+        - generic [ref=e217] [cursor=pointer]:
+          - generic [ref=e219]: 📝
+          - generic [ref=e220]:
+            - heading "程序员副业｜用1个月做了23个API接口，挂GitHub第一天就有人来问价了 分享一个我独立开发的 API 工具包 👇 🌟 包含了什么： • 23个生产级API接口 • 文本处理（清洗/翻译/摘要/改写） • 文档生成（PDF/Word） • 图片处理（缩放/裁剪/滤镜） • 数据工具（假数据/货币转换） • 开发者工具（JWT/Hash/URL） ✅ 特点： • 零外部依赖，部署超简单 • 带认证和限流，生产可用 • Python + Flask，代码清晰易懂 📦 开源地址（MIT许可，免费商用）：" [level=3] [ref=e221]
+            - generic [ref=e222]: 2026-04-11
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - img [ref=e225]
+                - generic [ref=e226]: Lin xiao yan
+              - generic [ref=e227]:
+                - generic [ref=e228]: 👍 50
+                - generic [ref=e229]: ⭐ 108
+        - generic [ref=e230] [cursor=pointer]:
+          - generic [ref=e232]: 📝
+          - generic [ref=e233]:
+            - heading "程序员副业｜用1个月做了23个API接口，挂GitHub第一天就有人来问价了 分享一个我独立开发的 API 工具包 👇 🌟 包含了什么： • 23个生产级API接口 • 文本处理（清洗/翻译/摘要/改写） • 文档生成（PDF/Word） • 图片处理（缩放/裁剪/滤镜） • 数据工具（假数据/货币转换） • 开发者工具（JWT/Hash/URL） ✅ 特点： • 零外部依赖，部署超简单 • 带认证和限流，生产可用 • Python + Flask，代码清晰易懂 📦 开源地址（MIT许可，免费商用）：" [level=3] [ref=e234]
+            - generic [ref=e235]: 2026-04-11
+            - generic [ref=e236]:
+              - generic [ref=e237]:
+                - img [ref=e238]
+                - generic [ref=e239]: Lin xiao yan
+              - generic [ref=e240]:
+                - generic [ref=e241]: 👍 50
+                - generic [ref=e242]: ⭐ 108
+        - generic [ref=e243] [cursor=pointer]:
+          - generic [ref=e245]: 📝
+          - generic [ref=e246]:
+            - heading "程序员副业｜用1个月做了23个API接口，挂GitHub第一天就有人来问价了 分享一个我独立开发的 API 工具包 👇 🌟 包含了什么： • 23个生产级API接口 • 文本处理（清洗/翻译/摘要/改写） • 文档生成（PDF/Word） • 图片处理（缩放/裁剪/滤镜） • 数据工具（假数据/货币转换） • 开发者工具（JWT/Hash/URL） ✅ 特点： • 零外部依赖，部署超简单 • 带认证和限流，生产可用 • Python + Flask，代码清晰易懂 📦 开源地址（MIT许可，免费商用）：" [level=3] [ref=e247]
+            - generic [ref=e248]: 2026-04-11
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - img [ref=e251]
+                - generic [ref=e252]: Lin xiao yan
+              - generic [ref=e253]:
+                - generic [ref=e254]: 👍 50
+                - generic [ref=e255]: ⭐ 108
+        - generic [ref=e256] [cursor=pointer]:
+          - generic [ref=e258]: 📝
+          - generic [ref=e259]:
+            - heading "程序员副业｜用1个月做了23个API接口，挂GitHub第一天就有人来问价了 分享一个我独立开发的 API 工具包 👇 🌟 包含了什么： • 23个生产级API接口 • 文本处理（清洗/翻译/摘要/改写） • 文档生成（PDF/Word） • 图片处理（缩放/裁剪/滤镜） • 数据工具（假数据/货币转换） • 开发者工具（JWT/Hash/URL） ✅ 特点： • 零外部依赖，部署超简单 • 带认证和限流，生产可用 • Python + Flask，代码清晰易懂 📦 开源地址（MIT许可，免费商用）：" [level=3] [ref=e260]
+            - generic [ref=e261]: 2026-04-11
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - img [ref=e264]
+                - generic [ref=e265]: Lin xiao yan
+              - generic [ref=e266]:
+                - generic [ref=e267]: 👍 50
+                - generic [ref=e268]: ⭐ 108
+        - generic [ref=e269] [cursor=pointer]:
+          - generic [ref=e271]: 📝
+          - generic [ref=e272]:
+            - heading "程序员副业｜用1个月做了23个API接口，挂GitHub第一天就有人来问价了 分享一个我独立开发的 API 工具包 👇 🌟 包含了什么： • 23个生产级API接口 • 文本处理（清洗/翻译/摘要/改写） • 文档生成（PDF/Word） • 图片处理（缩放/裁剪/滤镜） • 数据工具（假数据/货币转换） • 开发者工具（JWT/Hash/URL） ✅ 特点： • 零外部依赖，部署超简单 • 带认证和限流，生产可用 • Python + Flask，代码清晰易懂 📦 开源地址（MIT许可，免费商用）：" [level=3] [ref=e273]
+            - generic [ref=e274]: 2026-04-11
+            - generic [ref=e275]:
+              - generic [ref=e276]:
+                - img [ref=e277]
+                - generic [ref=e278]: Lin xiao yan
+              - generic [ref=e279]:
+                - generic [ref=e280]: 👍 50
+                - generic [ref=e281]: ⭐ 109
+        - generic [ref=e282] [cursor=pointer]:
+          - generic [ref=e284]: 📝
+          - generic [ref=e285]:
+            - heading "加入我们 | 不同水平都能做的AI项目（3种）" [level=3] [ref=e286]
+            - generic [ref=e287]: 2026-04-08
+            - generic [ref=e288]:
+              - generic [ref=e289]:
+                - img [ref=e290]
+                - generic [ref=e291]: 曼孚众包
+              - generic [ref=e292]:
+                - generic [ref=e293]: 👍 175
+                - generic [ref=e294]: ⭐ 207
+        - generic [ref=e295] [cursor=pointer]:
+          - generic [ref=e297]: 📝
+          - generic [ref=e298]:
+            - heading "加入我们 | 不同水平都能做的AI项目（3种）" [level=3] [ref=e299]
+            - generic [ref=e300]: 2026-04-08
+            - generic [ref=e301]:
+              - generic [ref=e302]:
+                - img [ref=e303]
+                - generic [ref=e304]: 曼孚众包
+              - generic [ref=e305]:
+                - generic [ref=e306]: 👍 177
+                - generic [ref=e307]: ⭐ 209
+        - generic [ref=e308] [cursor=pointer]:
+          - generic [ref=e310]: 📝
+          - generic [ref=e311]:
+            - heading "加入我们 | 不同水平都能做的AI项目（3种）" [level=3] [ref=e312]
+            - generic [ref=e313]: 2026-04-08
+            - generic [ref=e314]:
+              - generic [ref=e315]:
+                - img [ref=e316]
+                - generic [ref=e317]: 曼孚众包
+              - generic [ref=e318]:
+                - generic [ref=e319]: 👍 177
+                - generic [ref=e320]: ⭐ 209
+        - generic [ref=e321] [cursor=pointer]:
+          - generic [ref=e323]: 📝
+          - generic [ref=e324]:
+            - heading "加入我们 | 不同水平都能做的AI项目（3种）" [level=3] [ref=e325]
+            - generic [ref=e326]: 2026-04-08
+            - generic [ref=e327]:
+              - generic [ref=e328]:
+                - img [ref=e329]
+                - generic [ref=e330]: 曼孚众包
+              - generic [ref=e331]:
+                - generic [ref=e332]: 👍 176
+                - generic [ref=e333]: ⭐ 209
+        - generic [ref=e334] [cursor=pointer]:
+          - generic [ref=e336]: 📝
+          - generic [ref=e337]:
+            - heading "程序员可以做的副业" [level=3] [ref=e338]
+            - generic [ref=e339]: 2026-04-08
+            - generic [ref=e340]:
+              - generic [ref=e341]:
+                - img [ref=e342]
+                - generic [ref=e343]: 邢不行量化
+              - generic [ref=e344]:
+                - generic [ref=e345]: 👍 28
+                - generic [ref=e346]: ⭐ 23
+        - generic [ref=e347] [cursor=pointer]:
+          - generic [ref=e349]: 📝
+          - generic [ref=e350]:
+            - heading "五一广州兼职（已停止招聘）" [level=3] [ref=e351]
+            - generic [ref=e352]: 2026-04-08
+            - generic [ref=e353]:
+              - generic [ref=e354]:
+                - img [ref=e355]
+                - generic [ref=e356]: Orz。
+              - generic [ref=e357]:
+                - generic [ref=e358]: 👍 51
+                - generic [ref=e359]: ⭐ 25
+        - generic [ref=e360] [cursor=pointer]:
+          - generic [ref=e362]: 📝
+          - generic [ref=e363]:
+            - heading "普通人都能做的python搞💰思路" [level=3] [ref=e364]
+            - generic [ref=e365]: 2026-04-07
+            - generic [ref=e366]:
+              - generic [ref=e367]:
+                - img [ref=e368]
+                - generic [ref=e369]: 网安潇潇
+              - generic [ref=e370]:
+                - generic [ref=e371]: 👍 132
+                - generic [ref=e372]: ⭐ 155
+        - generic [ref=e373] [cursor=pointer]:
+          - generic [ref=e375]: 📝
+          - generic [ref=e376]:
+            - heading "普通人都能做的python搞💰思路" [level=3] [ref=e377]
+            - generic [ref=e378]: 2026-04-07
+            - generic [ref=e379]:
+              - generic [ref=e380]:
+                - img [ref=e381]
+                - generic [ref=e382]: 网安潇潇
+              - generic [ref=e383]:
+                - generic [ref=e384]: 👍 132
+                - generic [ref=e385]: ⭐ 155
+        - generic [ref=e386] [cursor=pointer]:
+          - generic [ref=e388]: 📝
+          - generic [ref=e389]:
+            - heading "普通人都能做的python搞💰思路" [level=3] [ref=e390]
+            - generic [ref=e391]: 2026-04-07
+            - generic [ref=e392]:
+              - generic [ref=e393]:
+                - img [ref=e394]
+                - generic [ref=e395]: 网安潇潇
+              - generic [ref=e396]:
+                - generic [ref=e397]: 👍 134
+                - generic [ref=e398]: ⭐ 160
+        - generic [ref=e399] [cursor=pointer]:
+          - generic [ref=e401]: 📝
+          - generic [ref=e402]:
+            - heading "帮团队招聘一位医疗算法工程师（兼职）" [level=3] [ref=e403]
+            - generic [ref=e404]: 2026-04-05
+            - generic [ref=e405]:
+              - generic [ref=e406]:
+                - img [ref=e407]
+                - generic [ref=e408]: 关你西红柿
+              - generic [ref=e409]:
+                - generic [ref=e410]: 👍 39
+                - generic [ref=e411]: ⭐ 37
+        - generic [ref=e412] [cursor=pointer]:
+          - generic [ref=e414]: 📝
+          - generic [ref=e415]:
+            - heading "最近被隔壁组同事卷到了，写代码速度直接甩我一条街。一问才知道，人家用上了Cursor和Copilot这种AI编程助手，开发效率确实牛。 我也心动想冲，结果一算账傻了： ▫️ Cursor Pro：$20/月 ≈ 145块 ▫️ Copilot：$10/月 ≈ 72块 ▫️ 再加个ChatGPT Plus：又是$20 👉 一个月下来快400块了……打工人的工资真的遭不住啊😭 然后朋友跟我说，现在有那种“拼车模式”，好几个工具打包在一起，人均才几十块。但我不太懂，这种拼车靠谱吗？会不会掉线、数据安全吗？ 有没" [level=3] [ref=e416]
+            - generic [ref=e417]: 2026-04-03
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - img [ref=e420]
+                - generic [ref=e421]: 路遥远吗
+              - generic [ref=e422]:
+                - generic [ref=e423]: 👍 13
+                - generic [ref=e424]: ⭐ 5
+        - generic [ref=e425] [cursor=pointer]:
+          - generic [ref=e427]: 📝
+          - generic [ref=e428]:
+            - heading "希望做一款小游戏" [level=3] [ref=e429]
+            - generic [ref=e430]: 2026-04-01
+            - generic [ref=e431]:
+              - generic [ref=e432]:
+                - img [ref=e433]
+                - generic [ref=e434]: 流苏
+              - generic [ref=e435]:
+                - generic [ref=e436]: 👍 20
+                - generic [ref=e437]: ⭐ 9
+        - generic [ref=e438] [cursor=pointer]:
+          - generic [ref=e440]: 📝
+          - generic [ref=e441]:
+            - heading "希望做一款小游戏" [level=3] [ref=e442]
+            - generic [ref=e443]: 2026-04-01
+            - generic [ref=e444]:
+              - generic [ref=e445]:
+                - img [ref=e446]
+                - generic [ref=e447]: 流苏
+              - generic [ref=e448]:
+                - generic [ref=e449]: 👍 20
+                - generic [ref=e450]: ⭐ 9
+        - generic [ref=e451] [cursor=pointer]:
+          - generic [ref=e453]: 📝
+          - generic [ref=e454]:
+            - heading "python" [level=3] [ref=e455]
+            - generic [ref=e456]: 2026-03-30
+            - generic [ref=e457]:
+              - generic [ref=e458]:
+                - img [ref=e459]
+                - generic [ref=e460]: Wany
+              - generic [ref=e461]:
+                - generic [ref=e462]: 👍 32
+                - generic [ref=e463]: ⭐ 15
+        - generic [ref=e464] [cursor=pointer]:
+          - generic [ref=e466]: 📝
+          - generic [ref=e467]:
+            - heading "加入我们 | 有vibe coding经验的人速来！" [level=3] [ref=e468]
+            - generic [ref=e469]: 2026-03-25
+            - generic [ref=e470]:
+              - generic [ref=e471]:
+                - img [ref=e472]
+                - generic [ref=e473]: 曼孚众包
+              - generic [ref=e474]:
+                - generic [ref=e475]: 👍 417
+                - generic [ref=e476]: ⭐ 512
+        - generic [ref=e477] [cursor=pointer]:
+          - generic [ref=e479]: 📝
+          - generic [ref=e480]:
+            - heading "加入我们 | 有vibe coding经验的人速来！" [level=3] [ref=e481]
+            - generic [ref=e482]: 2026-03-25
+            - generic [ref=e483]:
+              - generic [ref=e484]:
+                - img [ref=e485]
+                - generic [ref=e486]: 曼孚众包
+              - generic [ref=e487]:
+                - generic [ref=e488]: 👍 417
+                - generic [ref=e489]: ⭐ 512
+        - generic [ref=e490] [cursor=pointer]:
+          - generic [ref=e492]: 📝
+          - generic [ref=e493]:
+            - heading "加入我们 | 有vibe coding经验的人速来！" [level=3] [ref=e494]
+            - generic [ref=e495]: 2026-03-25
+            - generic [ref=e496]:
+              - generic [ref=e497]:
+                - img [ref=e498]
+                - generic [ref=e499]: 曼孚众包
+              - generic [ref=e500]:
+                - generic [ref=e501]: 👍 417
+                - generic [ref=e502]: ⭐ 512
+        - generic [ref=e503] [cursor=pointer]:
+          - generic [ref=e505]: 📝
+          - generic [ref=e506]:
+            - heading "加入我们 | 有vibe coding经验的人速来！" [level=3] [ref=e507]
+            - generic [ref=e508]: 2026-03-25
+            - generic [ref=e509]:
+              - generic [ref=e510]:
+                - img [ref=e511]
+                - generic [ref=e512]: 曼孚众包
+              - generic [ref=e513]:
+                - generic [ref=e514]: 👍 417
+                - generic [ref=e515]: ⭐ 512
+        - generic [ref=e516] [cursor=pointer]:
+          - generic [ref=e518]: 📝
+          - generic [ref=e519]:
+            - heading "25年，我招了一个年薪1k+程序员，还一直压榨" [level=3] [ref=e520]
+            - generic [ref=e521]: 2026-03-19
+            - generic [ref=e522]:
+              - generic [ref=e523]:
+                - img [ref=e524]
+                - generic [ref=e525]: 深漂程序员犬夜叉
+              - generic [ref=e526]:
+                - generic [ref=e527]: 👍 68
+                - generic [ref=e528]: ⭐ 17
+        - generic [ref=e529] [cursor=pointer]:
+          - generic [ref=e531]: 📝
+          - generic [ref=e532]:
+            - heading "25年，我招了一个年薪1k+程序员，还一直压榨" [level=3] [ref=e533]
+            - generic [ref=e534]: 2026-03-19
+            - generic [ref=e535]:
+              - generic [ref=e536]:
+                - img [ref=e537]
+                - generic [ref=e538]: 深漂程序员犬夜叉
+              - generic [ref=e539]:
+                - generic [ref=e540]: 👍 68
+                - generic [ref=e541]: ⭐ 17
+        - generic [ref=e542] [cursor=pointer]:
+          - generic [ref=e544]: 📝
+          - generic [ref=e545]:
+            - heading "程序员搞副业，下班接私活，继续布局30岁退路" [level=3] [ref=e546]
+            - generic [ref=e547]: 2026-03-14
+            - generic [ref=e548]:
+              - generic [ref=e549]:
+                - img [ref=e550]
+                - generic [ref=e551]: 深漂程序员犬夜叉
+              - generic [ref=e552]:
+                - generic [ref=e553]: 👍 115
+                - generic [ref=e554]: ⭐ 26
+        - generic [ref=e555] [cursor=pointer]:
+          - generic [ref=e557]: 📝
+          - generic [ref=e558]:
+            - heading "程序员搞副业，下班接私活，继续布局30岁退路" [level=3] [ref=e559]
+            - generic [ref=e560]: 2026-03-14
+            - generic [ref=e561]:
+              - generic [ref=e562]:
+                - img [ref=e563]
+                - generic [ref=e564]: 深漂程序员犬夜叉
+              - generic [ref=e565]:
+                - generic [ref=e566]: 👍 115
+                - generic [ref=e567]: ⭐ 26
+        - generic [ref=e568] [cursor=pointer]:
+          - generic [ref=e570]: 📝
+          - generic [ref=e571]:
+            - heading "程序员副业很多，但最后其实只有3条路" [level=3] [ref=e572]
+            - generic [ref=e573]: 2026-03-09
+            - generic [ref=e574]:
+              - generic [ref=e575]:
+                - img [ref=e576]
+                - generic [ref=e577]: 个人IP成长录 | 从0到变现
+              - generic [ref=e578]:
+                - generic [ref=e579]: 👍 15
+                - generic [ref=e580]: ⭐ 18
+        - generic [ref=e581] [cursor=pointer]:
+          - generic [ref=e583]: 📝
+          - generic [ref=e584]:
+            - heading "加入我们 | 面向·会用AI写项目的程序员" [level=3] [ref=e585]
+            - generic [ref=e586]: 2026-02-28
+            - generic [ref=e587]:
+              - generic [ref=e588]:
+                - img [ref=e589]
+                - generic [ref=e590]: 曼孚众包
+              - generic [ref=e591]:
+                - generic [ref=e592]: 👍 190
+                - generic [ref=e593]: ⭐ 210
+        - generic [ref=e594] [cursor=pointer]:
+          - generic [ref=e596]: 📝
+          - generic [ref=e597]:
+            - heading "上班摸鱼做游戏Day2｜3000块预算工具全在这" [level=3] [ref=e598]
+            - generic [ref=e599]: 2026-02-28
+            - generic [ref=e600]:
+              - generic [ref=e601]:
+                - img [ref=e602]
+                - generic [ref=e603]: Suntaya
+              - generic [ref=e604]:
+                - generic [ref=e605]: 👍 56
+                - generic [ref=e606]: ⭐ 114
+        - generic [ref=e607] [cursor=pointer]:
+          - generic [ref=e608]:
+            - generic [ref=e609]: 🎬
+            - generic [ref=e610]: 🎬 视频
+          - generic [ref=e611]:
+            - heading "春节没回家 AI 编程产品终于 做出来啦！" [level=3] [ref=e612]
+            - generic [ref=e613]: 2026-02-21
+            - generic [ref=e614]:
+              - generic [ref=e615]:
+                - img [ref=e616]
+                - generic [ref=e617]: 金角大王Alex
+              - generic [ref=e618]:
+                - generic [ref=e619]: 👍 14
+                - generic [ref=e620]: ⭐ 7
+        - generic [ref=e621] [cursor=pointer]:
+          - generic [ref=e623]: 📝
+          - generic [ref=e624]:
+            - heading "普通程序员，每天三份工作，副业已经超过主业" [level=3] [ref=e625]
+            - generic [ref=e626]: 2026-02-09
+            - generic [ref=e627]:
+              - generic [ref=e628]:
+                - img [ref=e629]
+                - generic [ref=e630]: 深漂程序员犬夜叉
+              - generic [ref=e631]:
+                - generic [ref=e632]: 👍 791
+                - generic [ref=e633]: ⭐ 391
+        - generic [ref=e634] [cursor=pointer]:
+          - generic [ref=e636]: 📝
+          - generic [ref=e637]:
+            - heading "普通程序员，每天三份工作，副业已经超过主业" [level=3] [ref=e638]
+            - generic [ref=e639]: 2026-02-09
+            - generic [ref=e640]:
+              - generic [ref=e641]:
+                - img [ref=e642]
+                - generic [ref=e643]: 深漂程序员犬夜叉
+              - generic [ref=e644]:
+                - generic [ref=e645]: 👍 791
+                - generic [ref=e646]: ⭐ 391
+        - generic [ref=e647] [cursor=pointer]:
+          - generic [ref=e649]: 📝
+          - generic [ref=e650]:
+            - heading "普通程序员，每天三份工作，副业已经超过主业" [level=3] [ref=e651]
+            - generic [ref=e652]: 2026-02-09
+            - generic [ref=e653]:
+              - generic [ref=e654]:
+                - img [ref=e655]
+                - generic [ref=e656]: 深漂程序员犬夜叉
+              - generic [ref=e657]:
+                - generic [ref=e658]: 👍 791
+                - generic [ref=e659]: ⭐ 391
+        - generic [ref=e660] [cursor=pointer]:
+          - generic [ref=e662]: 📝
+          - generic [ref=e663]:
+            - heading "普通程序员，每天三份工作，副业已经超过主业" [level=3] [ref=e664]
+            - generic [ref=e665]: 2026-02-09
+            - generic [ref=e666]:
+              - generic [ref=e667]:
+                - img [ref=e668]
+                - generic [ref=e669]: 深漂程序员犬夜叉
+              - generic [ref=e670]:
+                - generic [ref=e671]: 👍 791
+                - generic [ref=e672]: ⭐ 391
+        - generic [ref=e673] [cursor=pointer]:
+          - generic [ref=e675]: 📝
+          - generic [ref=e676]:
+            - heading "普通程序员，每天三份工作，副业已经超过主业" [level=3] [ref=e677]
+            - generic [ref=e678]: 2026-02-09
+            - generic [ref=e679]:
+              - generic [ref=e680]:
+                - img [ref=e681]
+                - generic [ref=e682]: 深漂程序员犬夜叉
+              - generic [ref=e683]:
+                - generic [ref=e684]: 👍 791
+                - generic [ref=e685]: ⭐ 391
+        - generic [ref=e686] [cursor=pointer]:
+          - generic [ref=e688]: 📝
+          - generic [ref=e689]:
+            - heading "普通程序员，每天三份工作，副业已经超过主业" [level=3] [ref=e690]
+            - generic [ref=e691]: 2026-02-09
+            - generic [ref=e692]:
+              - generic [ref=e693]:
+                - img [ref=e694]
+                - generic [ref=e695]: 深漂程序员犬夜叉
+              - generic [ref=e696]:
+                - generic [ref=e697]: 👍 794
+                - generic [ref=e698]: ⭐ 392
+        - generic [ref=e699] [cursor=pointer]:
+          - generic [ref=e701]: 📝
+          - generic [ref=e702]:
+            - heading "普通程序员，每天三份工作，副业已经超过主业" [level=3] [ref=e703]
+            - generic [ref=e704]: 2026-02-09
+            - generic [ref=e705]:
+              - generic [ref=e706]:
+                - img [ref=e707]
+                - generic [ref=e708]: 深漂程序员犬夜叉
+              - generic [ref=e709]:
+                - generic [ref=e710]: 👍 794
+                - generic [ref=e711]: ⭐ 392
+        - generic [ref=e712] [cursor=pointer]:
+          - generic [ref=e714]: 📝
+          - generic [ref=e715]:
+            - heading "适合内向人的7个AI小收益🔥🔥🔥" [level=3] [ref=e716]
+            - generic [ref=e717]: 2026-02-05
+            - generic [ref=e718]:
+              - generic [ref=e719]:
+                - img [ref=e720]
+                - generic [ref=e721]: 努力总会发光
+              - generic [ref=e722]:
+                - generic [ref=e723]: 👍 543
+                - generic [ref=e724]: ⭐ 691
+        - generic [ref=e725] [cursor=pointer]:
+          - generic [ref=e727]: 📝
+          - generic [ref=e728]:
+            - heading "适合内向人的7个AI小收益🔥🔥🔥" [level=3] [ref=e729]
+            - generic [ref=e730]: 2026-02-05
+            - generic [ref=e731]:
+              - generic [ref=e732]:
+                - img [ref=e733]
+                - generic [ref=e734]: 努力总会发光
+              - generic [ref=e735]:
+                - generic [ref=e736]: 👍 545
+                - generic [ref=e737]: ⭐ 696
+        - generic [ref=e738] [cursor=pointer]:
+          - generic [ref=e740]: 📝
+          - generic [ref=e741]:
+            - heading "适合内向人的7个AI小收益🔥🔥🔥" [level=3] [ref=e742]
+            - generic [ref=e743]: 2026-02-05
+            - generic [ref=e744]:
+              - generic [ref=e745]:
+                - img [ref=e746]
+                - generic [ref=e747]: 努力总会发光
+              - generic [ref=e748]:
+                - generic [ref=e749]: 👍 549
+                - generic [ref=e750]: ⭐ 699
+        - generic [ref=e751] [cursor=pointer]:
+          - generic [ref=e753]: 📝
+          - generic [ref=e754]:
+            - heading "适合内向人的7个AI小收益🔥🔥🔥" [level=3] [ref=e755]
+            - generic [ref=e756]: 2026-02-05
+            - generic [ref=e757]:
+              - generic [ref=e758]:
+                - img [ref=e759]
+                - generic [ref=e760]: 努力总会发光
+              - generic [ref=e761]:
+                - generic [ref=e762]: 👍 549
+                - generic [ref=e763]: ⭐ 699
+        - generic [ref=e764] [cursor=pointer]:
+          - generic [ref=e766]: 📝
+          - generic [ref=e767]:
+            - heading "适合内向人的7个AI小收益🔥🔥🔥" [level=3] [ref=e768]
+            - generic [ref=e769]: 2026-02-05
+            - generic [ref=e770]:
+              - generic [ref=e771]:
+                - img [ref=e772]
+                - generic [ref=e773]: 努力总会发光
+              - generic [ref=e774]:
+                - generic [ref=e775]: 👍 549
+                - generic [ref=e776]: ⭐ 699
+        - generic [ref=e777] [cursor=pointer]:
+          - generic [ref=e779]: 📝
+          - generic [ref=e780]:
+            - heading "程序员接活最怕的一天，年前工期又要满了" [level=3] [ref=e781]
+            - generic [ref=e782]: 2026-01-28
+            - generic [ref=e783]:
+              - generic [ref=e784]:
+                - img [ref=e785]
+                - generic [ref=e786]: 无无
+              - generic [ref=e787]:
+                - generic [ref=e788]: 👍 20
+                - generic [ref=e789]: ⭐ 6
+        - generic [ref=e790] [cursor=pointer]:
+          - generic [ref=e792]: 📝
+          - generic [ref=e793]:
+            - heading "28岁程序员，接私活第3年，每天下班都要干活" [level=3] [ref=e794]
+            - generic [ref=e795]: 2026-01-27
+            - generic [ref=e796]:
+              - generic [ref=e797]:
+                - img [ref=e798]
+                - generic [ref=e799]: 深漂程序员犬夜叉
+              - generic [ref=e800]:
+                - generic [ref=e801]: 👍 92
+                - generic [ref=e802]: ⭐ 32
+        - generic [ref=e803] [cursor=pointer]:
+          - generic [ref=e805]: 📝
+          - generic [ref=e806]:
+            - heading "28岁程序员，接私活第3年，每天下班都要干活" [level=3] [ref=e807]
+            - generic [ref=e808]: 2026-01-27
+            - generic [ref=e809]:
+              - generic [ref=e810]:
+                - img [ref=e811]
+                - generic [ref=e812]: 深漂程序员犬夜叉
+              - generic [ref=e813]:
+                - generic [ref=e814]: 👍 92
+                - generic [ref=e815]: ⭐ 32
+        - generic [ref=e816] [cursor=pointer]:
+          - generic [ref=e818]: 📝
+          - generic [ref=e819]:
+            - heading "独立开发 1 个月，收益结果惊到我了…" [level=3] [ref=e820]
+            - generic [ref=e821]: 2026-01-21
+            - generic [ref=e822]:
+              - generic [ref=e823]:
+                - img [ref=e824]
+                - generic [ref=e825]: 独立牛马
+              - generic [ref=e826]:
+                - generic [ref=e827]: 👍 128
+                - generic [ref=e828]: ⭐ 75
+        - generic [ref=e829] [cursor=pointer]:
+          - generic [ref=e831]: 📝
+          - generic [ref=e832]:
+            - heading "独立开发 1 个月，收益结果惊到我了…" [level=3] [ref=e833]
+            - generic [ref=e834]: 2026-01-21
+            - generic [ref=e835]:
+              - generic [ref=e836]:
+                - img [ref=e837]
+                - generic [ref=e838]: 独立牛马
+              - generic [ref=e839]:
+                - generic [ref=e840]: 👍 128
+                - generic [ref=e841]: ⭐ 75
+        - generic [ref=e842] [cursor=pointer]:
+          - generic [ref=e843]:
+            - generic [ref=e844]: 🎬
+            - generic [ref=e845]: 🎬 视频
+          - generic [ref=e846]:
+            - heading "程序员最简单的变现方式" [level=3] [ref=e847]
+            - generic [ref=e848]: 2026-01-21
+            - generic [ref=e849]:
+              - generic [ref=e850]:
+                - img [ref=e851]
+                - generic [ref=e852]: 爱编程的猫
+              - generic [ref=e853]:
+                - generic [ref=e854]: 👍 162
+                - generic [ref=e855]: ⭐ 97
+        - generic [ref=e856] [cursor=pointer]:
+          - generic [ref=e857]:
+            - generic [ref=e858]: 🎬
+            - generic [ref=e859]: 🎬 视频
+          - generic [ref=e860]:
+            - heading "程序员最简单的变现方式" [level=3] [ref=e861]
+            - generic [ref=e862]: 2026-01-21
+            - generic [ref=e863]:
+              - generic [ref=e864]:
+                - img [ref=e865]
+                - generic [ref=e866]: 爱编程的猫
+              - generic [ref=e867]:
+                - generic [ref=e868]: 👍 162
+                - generic [ref=e869]: ⭐ 97
+        - generic [ref=e870] [cursor=pointer]:
+          - generic [ref=e872]: 📝
+          - generic [ref=e873]:
+            - 'heading "大一计科女靠C语言赚到了人生的第一桶金 我把C语言教材挂闲鱼上卖了。。。 #c语言学习[话题]# #计算机专业[话题]# #编程[话题]# #计算机[话题]# #工科女[话题]# #程序员[话题]#" [level=3] [ref=e874]'
+            - generic [ref=e875]: 2026-01-17
+            - generic [ref=e876]:
+              - generic [ref=e877]:
+                - img [ref=e878]
+                - generic [ref=e879]: 青山卤水
+              - generic [ref=e880]:
+                - generic [ref=e881]: 👍 2.2k
+                - generic [ref=e882]: ⭐ 136
+        - generic [ref=e883] [cursor=pointer]:
+          - generic [ref=e885]: 📝
+          - generic [ref=e886]:
+            - 'heading "大一计科女靠C语言赚到了人生的第一桶金 我把C语言教材挂闲鱼上卖了。。。 #c语言学习[话题]# #计算机专业[话题]# #编程[话题]# #计算机[话题]# #工科女[话题]# #程序员[话题]#" [level=3] [ref=e887]'
+            - generic [ref=e888]: 2026-01-17
+            - generic [ref=e889]:
+              - generic [ref=e890]:
+                - img [ref=e891]
+                - generic [ref=e892]: 青山卤水
+              - generic [ref=e893]:
+                - generic [ref=e894]: 👍 2.2k
+                - generic [ref=e895]: ⭐ 136
+        - generic [ref=e896] [cursor=pointer]:
+          - generic [ref=e898]: 📝
+          - generic [ref=e899]:
+            - 'heading "大一计科女靠C语言赚到了人生的第一桶金 我把C语言教材挂闲鱼上卖了。。。 #c语言学习[话题]# #计算机专业[话题]# #编程[话题]# #计算机[话题]# #工科女[话题]# #程序员[话题]#" [level=3] [ref=e900]'
+            - generic [ref=e901]: 2026-01-17
+            - generic [ref=e902]:
+              - generic [ref=e903]:
+                - img [ref=e904]
+                - generic [ref=e905]: 青山卤水
+              - generic [ref=e906]:
+                - generic [ref=e907]: 👍 2.2k
+                - generic [ref=e908]: ⭐ 136
+        - generic [ref=e909] [cursor=pointer]:
+          - generic [ref=e911]: 📝
+          - generic [ref=e912]:
+            - 'heading "大一计科女靠C语言赚到了人生的第一桶金 我把C语言教材挂闲鱼上卖了。。。 #c语言学习[话题]# #计算机专业[话题]# #编程[话题]# #计算机[话题]# #工科女[话题]# #程序员[话题]#" [level=3] [ref=e913]'
+            - generic [ref=e914]: 2026-01-17
+            - generic [ref=e915]:
+              - generic [ref=e916]:
+                - img [ref=e917]
+                - generic [ref=e918]: 青山卤水
+              - generic [ref=e919]:
+                - generic [ref=e920]: 👍 2.2k
+                - generic [ref=e921]: ⭐ 136
+        - generic [ref=e922] [cursor=pointer]:
+          - generic [ref=e924]: 📝
+          - generic [ref=e925]:
+            - 'heading "干六年程序员了，最近接了点私活赚了点钱，也是第一次接，想问下大伙，程序员做副业有哪些方向，能够稳定盈利的，钱不需要太多，稳定就行，而且自由#程序员[话题]# #软件开发[话题]# #副业[话题]#" [level=3] [ref=e926]'
+            - generic [ref=e927]: 2026-01-15
+            - generic [ref=e928]:
+              - generic [ref=e929]:
+                - img [ref=e930]
+                - generic [ref=e931]: 这下康了
+              - generic [ref=e932]:
+                - generic [ref=e933]: 👍 94
+                - generic [ref=e934]: ⭐ 162
+        - generic [ref=e935] [cursor=pointer]:
+          - generic [ref=e937]: 📝
+          - generic [ref=e938]:
+            - 'heading "干六年程序员了，最近接了点私活赚了点钱，也是第一次接，想问下大伙，程序员做副业有哪些方向，能够稳定盈利的，钱不需要太多，稳定就行，而且自由#程序员[话题]# #软件开发[话题]# #副业[话题]#" [level=3] [ref=e939]'
+            - generic [ref=e940]: 2026-01-15
+            - generic [ref=e941]:
+              - generic [ref=e942]:
+                - img [ref=e943]
+                - generic [ref=e944]: 这下康了
+              - generic [ref=e945]:
+                - generic [ref=e946]: 👍 94
+                - generic [ref=e947]: ⭐ 162
+        - generic [ref=e948] [cursor=pointer]:
+          - generic [ref=e950]: 📝
+          - generic [ref=e951]:
+            - 'heading "干六年程序员了，最近接了点私活赚了点钱，也是第一次接，想问下大伙，程序员做副业有哪些方向，能够稳定盈利的，钱不需要太多，稳定就行，而且自由#程序员[话题]# #软件开发[话题]# #副业[话题]#" [level=3] [ref=e952]'
+            - generic [ref=e953]: 2026-01-15
+            - generic [ref=e954]:
+              - generic [ref=e955]:
+                - img [ref=e956]
+                - generic [ref=e957]: 这下康了
+              - generic [ref=e958]:
+                - generic [ref=e959]: 👍 94
+                - generic [ref=e960]: ⭐ 162
+        - generic [ref=e961] [cursor=pointer]:
+          - generic [ref=e963]: 📝
+          - generic [ref=e964]:
+            - heading "果然在咸鱼打开思路=打开销路" [level=3] [ref=e965]
+            - generic [ref=e966]: 2025-12-24
+            - generic [ref=e967]:
+              - generic [ref=e968]:
+                - img [ref=e969]
+                - generic [ref=e970]: 好奇-怪🌁
+              - generic [ref=e971]:
+                - generic [ref=e972]: 👍 192
+                - generic [ref=e973]: ⭐ 22
+        - generic [ref=e974] [cursor=pointer]:
+          - generic [ref=e976]: 📝
+          - generic [ref=e977]:
+            - heading "果然在咸鱼打开思路=打开销路" [level=3] [ref=e978]
+            - generic [ref=e979]: 2025-12-24
+            - generic [ref=e980]:
+              - generic [ref=e981]:
+                - img [ref=e982]
+                - generic [ref=e983]: 好奇-怪🌁
+              - generic [ref=e984]:
+                - generic [ref=e985]: 👍 192
+                - generic [ref=e986]: ⭐ 22
+        - generic [ref=e987] [cursor=pointer]:
+          - generic [ref=e989]: 📝
+          - generic [ref=e990]:
+            - heading "果然在咸鱼打开思路=打开销路" [level=3] [ref=e991]
+            - generic [ref=e992]: 2025-12-24
+            - generic [ref=e993]:
+              - generic [ref=e994]:
+                - img [ref=e995]
+                - generic [ref=e996]: 好奇-怪🌁
+              - generic [ref=e997]:
+                - generic [ref=e998]: 👍 192
+                - generic [ref=e999]: ⭐ 22
+        - generic [ref=e1000] [cursor=pointer]:
+          - generic [ref=e1002]: 📝
+          - generic [ref=e1003]:
+            - heading "worldquant - 收入一天天在增加" [level=3] [ref=e1004]
+            - generic [ref=e1005]: 2025-12-05
+            - generic [ref=e1006]:
+              - generic [ref=e1007]:
+                - img [ref=e1008]
+                - generic [ref=e1009]: 小房总~
+              - generic [ref=e1010]:
+                - generic [ref=e1011]: 👍 16
+                - generic [ref=e1012]: ⭐ 3
+        - generic [ref=e1013] [cursor=pointer]:
+          - generic [ref=e1015]: 📝
+          - generic [ref=e1016]:
+            - heading "28岁程序员，下班接私活，项目快收尾了" [level=3] [ref=e1017]
+            - generic [ref=e1018]: 2025-11-20
+            - generic [ref=e1019]:
+              - generic [ref=e1020]:
+                - img [ref=e1021]
+                - generic [ref=e1022]: 深漂程序员犬夜叉
+              - generic [ref=e1023]:
+                - generic [ref=e1024]: 👍 38
+                - generic [ref=e1025]: ⭐ 10
+        - generic [ref=e1026] [cursor=pointer]:
+          - generic [ref=e1028]: 📝
+          - generic [ref=e1029]:
+            - heading "接了个20W的项目，聊到报价时对方沉默了…" [level=3] [ref=e1030]
+            - generic [ref=e1031]: 2025-11-15
+            - generic [ref=e1032]:
+              - generic [ref=e1033]:
+                - img [ref=e1034]
+                - generic [ref=e1035]: 核动力编程
+              - generic [ref=e1036]:
+                - generic [ref=e1037]: 👍 54
+                - generic [ref=e1038]: ⭐ 20
+        - generic [ref=e1039] [cursor=pointer]:
+          - generic [ref=e1041]: 📝
+          - generic [ref=e1042]:
+            - heading "接了个20W的项目，聊到报价时对方沉默了…" [level=3] [ref=e1043]
+            - generic [ref=e1044]: 2025-11-15
+            - generic [ref=e1045]:
+              - generic [ref=e1046]:
+                - img [ref=e1047]
+                - generic [ref=e1048]: 核动力编程
+              - generic [ref=e1049]:
+                - generic [ref=e1050]: 👍 54
+                - generic [ref=e1051]: ⭐ 20
+        - generic [ref=e1052] [cursor=pointer]:
+          - generic [ref=e1054]: 📝
+          - generic [ref=e1055]:
+            - heading "接了个20W的项目，聊到报价时对方沉默了…" [level=3] [ref=e1056]
+            - generic [ref=e1057]: 2025-11-15
+            - generic [ref=e1058]:
+              - generic [ref=e1059]:
+                - img [ref=e1060]
+                - generic [ref=e1061]: 核动力编程
+              - generic [ref=e1062]:
+                - generic [ref=e1063]: 👍 54
+                - generic [ref=e1064]: ⭐ 20
+        - generic [ref=e1065] [cursor=pointer]:
+          - generic [ref=e1067]: 📝
+          - generic [ref=e1068]:
+            - heading "接了个20W的项目，聊到报价时对方沉默了…" [level=3] [ref=e1069]
+            - generic [ref=e1070]: 2025-11-15
+            - generic [ref=e1071]:
+              - generic [ref=e1072]:
+                - img [ref=e1073]
+                - generic [ref=e1074]: 核动力编程
+              - generic [ref=e1075]:
+                - generic [ref=e1076]: 👍 54
+                - generic [ref=e1077]: ⭐ 20
+        - generic [ref=e1078] [cursor=pointer]:
+          - generic [ref=e1080]: 📝
+          - generic [ref=e1081]:
+            - heading "八爪鱼HUB|11.15日副业兼职工作机会分享" [level=3] [ref=e1082]
+            - generic [ref=e1083]: 2025-11-15
+            - generic [ref=e1084]:
+              - generic [ref=e1085]:
+                - img [ref=e1086]
+                - generic [ref=e1087]: 八爪鱼Hub
+              - generic [ref=e1088]:
+                - generic [ref=e1089]: 👍 26
+                - generic [ref=e1090]: ⭐ 32
+        - generic [ref=e1091] [cursor=pointer]:
+          - generic [ref=e1092]:
+            - generic [ref=e1093]: 🎬
+            - generic [ref=e1094]: 🎬 视频
+          - generic [ref=e1095]:
+            - heading "35岁大龄程序员自救日志之某鱼卖代码" [level=3] [ref=e1096]
+            - generic [ref=e1097]: 2025-11-13
+            - generic [ref=e1098]:
+              - generic [ref=e1099]:
+                - img [ref=e1100]
+                - generic [ref=e1101]: 大大涵
+              - generic [ref=e1102]:
+                - generic [ref=e1103]: 👍 19
+                - generic [ref=e1104]: ⭐ 17
+        - generic [ref=e1105] [cursor=pointer]:
+          - generic [ref=e1106]:
+            - generic [ref=e1107]: 🎬
+            - generic [ref=e1108]: 🎬 视频
+          - generic [ref=e1109]:
+            - heading "35岁大龄程序员自救日志之某鱼卖代码" [level=3] [ref=e1110]
+            - generic [ref=e1111]: 2025-11-13
+            - generic [ref=e1112]:
+              - generic [ref=e1113]:
+                - img [ref=e1114]
+                - generic [ref=e1115]: 大大涵
+              - generic [ref=e1116]:
+                - generic [ref=e1117]: 👍 19
+                - generic [ref=e1118]: ⭐ 17
+        - generic [ref=e1119] [cursor=pointer]:
+          - generic [ref=e1121]: 📝
+          - generic [ref=e1122]:
+            - heading "爱编程的财务" [level=3] [ref=e1123]
+            - generic [ref=e1124]: 2025-11-10
+            - generic [ref=e1125]:
+              - generic [ref=e1126]:
+                - img [ref=e1127]
+                - generic [ref=e1128]: 爱编程的财会
+              - generic [ref=e1129]:
+                - generic [ref=e1130]: 👍 716
+                - generic [ref=e1131]: ⭐ 684
+        - generic [ref=e1132] [cursor=pointer]:
+          - generic [ref=e1134]: 📝
+          - generic [ref=e1135]:
+            - heading "爱编程的财务" [level=3] [ref=e1136]
+            - generic [ref=e1137]: 2025-11-10
+            - generic [ref=e1138]:
+              - generic [ref=e1139]:
+                - img [ref=e1140]
+                - generic [ref=e1141]: 爱编程的财会
+              - generic [ref=e1142]:
+                - generic [ref=e1143]: 👍 716
+                - generic [ref=e1144]: ⭐ 684
+        - generic [ref=e1145] [cursor=pointer]:
+          - generic [ref=e1147]: 📝
+          - generic [ref=e1148]:
+            - heading "爱编程的财务" [level=3] [ref=e1149]
+            - generic [ref=e1150]: 2025-11-10
+            - generic [ref=e1151]:
+              - generic [ref=e1152]:
+                - img [ref=e1153]
+                - generic [ref=e1154]: 爱编程的财会
+              - generic [ref=e1155]:
+                - generic [ref=e1156]: 👍 717
+                - generic [ref=e1157]: ⭐ 686
+        - generic [ref=e1158] [cursor=pointer]:
+          - generic [ref=e1160]: 📝
+          - generic [ref=e1161]:
+            - heading "爱编程的财务" [level=3] [ref=e1162]
+            - generic [ref=e1163]: 2025-11-10
+            - generic [ref=e1164]:
+              - generic [ref=e1165]:
+                - img [ref=e1166]
+                - generic [ref=e1167]: 爱编程的财会
+              - generic [ref=e1168]:
+                - generic [ref=e1169]: 👍 717
+                - generic [ref=e1170]: ⭐ 686
+        - generic [ref=e1171] [cursor=pointer]:
+          - generic [ref=e1173]: 📝
+          - generic [ref=e1174]:
+            - heading "爱编程的财务" [level=3] [ref=e1175]
+            - generic [ref=e1176]: 2025-11-10
+            - generic [ref=e1177]:
+              - generic [ref=e1178]:
+                - img [ref=e1179]
+                - generic [ref=e1180]: 爱编程的财会
+              - generic [ref=e1181]:
+                - generic [ref=e1182]: 👍 717
+                - generic [ref=e1183]: ⭐ 686
+        - generic [ref=e1184] [cursor=pointer]:
+          - generic [ref=e1186]: 📝
+          - generic [ref=e1187]:
+            - heading "学生新副业思路之应用开发怎么赚钱" [level=3] [ref=e1188]
+            - generic [ref=e1189]: 2025-11-08
+            - generic [ref=e1190]:
+              - generic [ref=e1191]:
+                - img [ref=e1192]
+                - generic [ref=e1193]: 圈宁CeoxNim
+              - generic [ref=e1194]:
+                - generic [ref=e1195]: 👍 3.9k
+                - generic [ref=e1196]: ⭐ 1.2k
+        - generic [ref=e1197] [cursor=pointer]:
+          - generic [ref=e1199]: 📝
+          - generic [ref=e1200]:
+            - heading "学生新副业思路之应用开发怎么赚钱" [level=3] [ref=e1201]
+            - generic [ref=e1202]: 2025-11-08
+            - generic [ref=e1203]:
+              - generic [ref=e1204]:
+                - img [ref=e1205]
+                - generic [ref=e1206]: 圈宁CeoxNim
+              - generic [ref=e1207]:
+                - generic [ref=e1208]: 👍 3.9k
+                - generic [ref=e1209]: ⭐ 1.2k
+        - generic [ref=e1210] [cursor=pointer]:
+          - generic [ref=e1212]: 📝
+          - generic [ref=e1213]:
+            - heading "学生新副业思路之应用开发怎么赚钱" [level=3] [ref=e1214]
+            - generic [ref=e1215]: 2025-11-08
+            - generic [ref=e1216]:
+              - generic [ref=e1217]:
+                - img [ref=e1218]
+                - generic [ref=e1219]: 圈宁CeoxNim
+              - generic [ref=e1220]:
+                - generic [ref=e1221]: 👍 3.9k
+                - generic [ref=e1222]: ⭐ 1.2k
+        - generic [ref=e1223] [cursor=pointer]:
+          - generic [ref=e1225]: 📝
+          - generic [ref=e1226]:
+            - heading "现在编程如此重要" [level=3] [ref=e1227]
+            - generic [ref=e1228]: 2025-10-29
+            - generic [ref=e1229]:
+              - generic [ref=e1230]:
+                - img [ref=e1231]
+                - generic [ref=e1232]: 不吃葡萄（软件开发）
+              - generic [ref=e1233]:
+                - generic [ref=e1234]: 👍 33
+                - generic [ref=e1235]: ⭐ 19
+        - generic [ref=e1236] [cursor=pointer]:
+          - generic [ref=e1238]: 📝
+          - generic [ref=e1239]:
+            - heading "现在编程如此重要" [level=3] [ref=e1240]
+            - generic [ref=e1241]: 2025-10-29
+            - generic [ref=e1242]:
+              - generic [ref=e1243]:
+                - img [ref=e1244]
+                - generic [ref=e1245]: 不吃葡萄（软件开发）
+              - generic [ref=e1246]:
+                - generic [ref=e1247]: 👍 33
+                - generic [ref=e1248]: ⭐ 19
+        - generic [ref=e1249] [cursor=pointer]:
+          - generic [ref=e1251]: 📝
+          - generic [ref=e1252]:
+            - heading "现在编程如此重要" [level=3] [ref=e1253]
+            - generic [ref=e1254]: 2025-10-29
+            - generic [ref=e1255]:
+              - generic [ref=e1256]:
+                - img [ref=e1257]
+                - generic [ref=e1258]: 不吃葡萄（软件开发）
+              - generic [ref=e1259]:
+                - generic [ref=e1260]: 👍 33
+                - generic [ref=e1261]: ⭐ 19
+        - generic [ref=e1262] [cursor=pointer]:
+          - generic [ref=e1264]: 📝
+          - generic [ref=e1265]:
+            - heading "现在编程如此重要" [level=3] [ref=e1266]
+            - generic [ref=e1267]: 2025-10-29
+            - generic [ref=e1268]:
+              - generic [ref=e1269]:
+                - img [ref=e1270]
+                - generic [ref=e1271]: 不吃葡萄（软件开发）
+              - generic [ref=e1272]:
+                - generic [ref=e1273]: 👍 33
+                - generic [ref=e1274]: ⭐ 19
+        - generic [ref=e1275] [cursor=pointer]:
+          - generic [ref=e1276]:
+            - generic [ref=e1277]: 🎬
+            - generic [ref=e1278]: 🎬 视频
+          - generic [ref=e1279]:
+            - heading "程序员该怎么做副业？" [level=3] [ref=e1280]
+            - generic [ref=e1281]: 2025-10-28
+            - generic [ref=e1282]:
+              - generic [ref=e1283]:
+                - img [ref=e1284]
+                - generic [ref=e1285]: 985 研二AI小逆
+              - generic [ref=e1286]:
+                - generic [ref=e1287]: 👍 1.1k
+                - generic [ref=e1288]: ⭐ 3.1k
+        - generic [ref=e1289] [cursor=pointer]:
+          - generic [ref=e1291]: 📝
+          - generic [ref=e1292]:
+            - heading "每天避坑一个副业：AI开发App（18/365）" [level=3] [ref=e1293]
+            - generic [ref=e1294]: 2025-10-21
+            - generic [ref=e1295]:
+              - generic [ref=e1296]:
+                - img [ref=e1297]
+                - generic [ref=e1298]: 邱三多
+              - generic [ref=e1299]:
+                - generic [ref=e1300]: 👍 442
+                - generic [ref=e1301]: ⭐ 462
+        - generic [ref=e1302] [cursor=pointer]:
+          - generic [ref=e1304]: 📝
+          - generic [ref=e1305]:
+            - heading "每天避坑一个副业：AI开发App（18/365）" [level=3] [ref=e1306]
+            - generic [ref=e1307]: 2025-10-21
+            - generic [ref=e1308]:
+              - generic [ref=e1309]:
+                - img [ref=e1310]
+                - generic [ref=e1311]: 邱三多
+              - generic [ref=e1312]:
+                - generic [ref=e1313]: 👍 442
+                - generic [ref=e1314]: ⭐ 462
+        - generic [ref=e1315] [cursor=pointer]:
+          - generic [ref=e1317]: 📝
+          - generic [ref=e1318]:
+            - heading "每天避坑一个副业：AI开发App（18/365）" [level=3] [ref=e1319]
+            - generic [ref=e1320]: 2025-10-21
+            - generic [ref=e1321]:
+              - generic [ref=e1322]:
+                - img [ref=e1323]
+                - generic [ref=e1324]: 邱三多
+              - generic [ref=e1325]:
+                - generic [ref=e1326]: 👍 442
+                - generic [ref=e1327]: ⭐ 461
+        - generic [ref=e1328] [cursor=pointer]:
+          - generic [ref=e1330]: 📝
+          - generic [ref=e1331]:
+            - heading "每天避坑一个副业：AI开发App（18/365）" [level=3] [ref=e1332]
+            - generic [ref=e1333]: 2025-10-21
+            - generic [ref=e1334]:
+              - generic [ref=e1335]:
+                - img [ref=e1336]
+                - generic [ref=e1337]: 邱三多
+              - generic [ref=e1338]:
+                - generic [ref=e1339]: 👍 442
+                - generic [ref=e1340]: ⭐ 461
+        - generic [ref=e1341] [cursor=pointer]:
+          - generic [ref=e1343]: 📝
+          - generic [ref=e1344]:
+            - 'heading "程序员最简单的赚钱方式，不是手搓agent，是在Github上找一个开源项目，封装成产品，卖出去试试，就这么简单，卖出去就是本事。#程序员[话题]##AI[话题]# #AI开发[话题]#" [level=3] [ref=e1345]'
+            - generic [ref=e1346]: 2025-10-15
+            - generic [ref=e1347]:
+              - generic [ref=e1348]:
+                - img [ref=e1349]
+                - generic [ref=e1350]: 王智远
+              - generic [ref=e1351]:
+                - generic [ref=e1352]: 👍 367
+                - generic [ref=e1353]: ⭐ 416
+      - paragraph [ref=e45]: 加载中...

@@ -219,11 +219,13 @@
 
 ---
 
-## Phase 8: 爬虫集成
+## Phase 8: 爬虫集成 ✅
 
 **Goal:** 爬虫自动发布图片下载任务
 
-**Status:** pending
+**Status:** complete
+
+**Completed:** 2026-04-24
 
 ### Requirements
 
@@ -260,8 +262,8 @@
 | 4 | 任务数据库与消息队列基础 | 8 | complete ✅ |
 | 5 | 定时任务调度 | 3 | complete ✅ |
 | 6 | 图片存储管理 | 4 | complete ✅ |
-| 7 | 前端图片显示优化 | 4 | pending |
-| 8 | 爬虫集成 | 2 | pending |
+| 7 | 前端图片显示优化 | 4 | complete ✅ |
+| 8 | 爬虫集成 | 2 | complete ✅ |
 
 ---
-*Last updated: 2026-04-23*
+*Last updated: 2026-04-24*

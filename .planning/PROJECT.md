@@ -8,6 +8,15 @@ MediaCrawler 是一个多平台社交媒体爬虫项目,支持小红书、抖音
 
 **爬虫数据必须实时推送到前端显示,图片必须可靠存储在本地** — 这是用户的核心期望,其他功能都为此服务。
 
+## Current Milestone: v3.0 多图轮播、视频下载与UI优化
+
+**Goal:** 实现小红书多图轮播、B站视频下载（支持大视频分片和断点续传）、UI清新简约风格优化
+
+**Target features:**
+- 小红书多图片轮播显示（3秒自动轮播，点击重置计时）
+- B站视频手动下载（50MB以上分片+断点续传）
+- UI清新简约风格重设计
+
 ## Current State
 
 **Latest Release:** v2.0 (2026-04-24)
@@ -37,25 +46,32 @@ MediaCrawler 是一个多平台社交媒体爬虫项目,支持小红书、抖音
 - ✅ WebSocket 实时数据推送
 - ✅ 图片本地存储与任务队列 (小红书平台已集成)
 
-## Next Milestone Goals
+## Requirements
 
-**v3.0:** 待规划
+### Validated
 
-### Potential Features
+<!-- Shipped and confirmed valuable. -->
 
-1. **多平台图片下载支持**
-   - 扩展至抖音、B站、知乎
-   - 统一图片 URL 提取逻辑
+- ✓ 小红书爬虫数据采集 — v1.0
+- ✓ WebSocket 实时推送 — v1.0
+- ✓ 图片本地存储 — v2.0
+- ✓ 任务队列下载 — v2.0
 
-2. **监控告警系统**
-   - 存储空间告警
-   - 任务失败告警
-   - 队列积压告警
+### Active
 
-3. **性能优化**
-   - 图片缩略图生成
-   - CDN 上传支持
-   - 批量下载优化
+<!-- Current scope. Building toward these. -->
+
+- [ ] 小红书多图轮播显示与交互
+- [ ] B站视频下载功能（分片+断点续传）
+- [ ] UI清新简约风格优化
+
+### Out of Scope
+
+<!-- Explicit boundaries. Includes reasoning to prevent re-adding. -->
+
+- 视频自动下载 — 用户明确要求手动触发
+- 其他平台视频下载 — 当前仅支持B站
+- 分布式任务队列 — 单进程 asyncio.Queue 足够
 
 ## Context
 
@@ -80,6 +96,7 @@ MediaCrawler 是一个多平台社交媒体爬虫项目,支持小红书、抖音
 - **兼容性**: 不能破坏现有的爬虫功能
 - **平台支持**: 必须支持所有已配置的平台（小红书、抖音、B站、知乎）
 - **存储**: 图片存储路径需与现有 data/ 目录结构兼容
+- **复用**: 视频下载应复用 v2.0 的任务队列架构
 
 ## Key Decisions
 
@@ -90,6 +107,9 @@ MediaCrawler 是一个多平台社交媒体爬虫项目,支持小红书、抖音
 | SQLite 存储任务状态 | 轻量级,无需额外依赖,适合中小规模 | ✓ 验证成功 (v2.0) |
 | asyncio.Queue 消息队列 | Python 原生,简单可靠,适合单进程 | ✓ 验证成功 (v2.0) |
 | asyncio 后台任务调度 | 不使用 APScheduler,减少依赖 | ✓ 验证成功 (v2.0) |
+| 大视频阈值 50MB | 平衡分片收益和网络开销 | — Pending (v3.0) |
+| 视频手动触发下载 | 用户明确需求 | — Pending (v3.0) |
+| UI 清新简约风格 | 用户明确需求 | — Pending (v3.0) |
 
 ---
 
@@ -111,4 +131,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-24 after milestone v2.0 completion*
+*Last updated: 2026-04-24 after milestone v3.0 initialization*
